@@ -1,0 +1,16 @@
+C:\UW\1\Greene220B_1\bin\Debug\netcoreapp3.1\Greene220B_1.exe
+C:\UW\1\Greene220B_1\bin\Debug\netcoreapp3.1\Greene220B_1.deps.json
+C:\UW\1\Greene220B_1\bin\Debug\netcoreapp3.1\Greene220B_1.runtimeconfig.json
+C:\UW\1\Greene220B_1\bin\Debug\netcoreapp3.1\Greene220B_1.runtimeconfig.dev.json
+C:\UW\1\Greene220B_1\bin\Debug\netcoreapp3.1\Greene220B_1.dll
+C:\UW\1\Greene220B_1\bin\Debug\netcoreapp3.1\Greene220B_1.pdb
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1.csprojAssemblyReference.cache
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1_MarkupCompile.cache
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1.g.resources
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1.AssemblyInfoInputs.cache
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1.AssemblyInfo.cs
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1.dll
+C:\UW\1\Greene220B_1\obj\Debug\netcoreapp3.1\Greene220B_1.pdb
