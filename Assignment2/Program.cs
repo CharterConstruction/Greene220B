@@ -15,13 +15,7 @@ namespace Assignment2
             users.Add(new User { Name = "Dave", Password = "hello" });
             users.Add(new User { Name = "Steve", Password = "steve" });
             users.Add(new User { Name = "Lisa", Password = "hello" });
-
-
-
-
-            //var remainingUsers = users.Select(t => $"Name: {t.Name}, Password {t.Password}");            
-            //string.Join(Environment.NewLine, remainingUsers);
-
+            
 
             // Display users with password == "hello"
             WriteUsersWithPasswordHello(users);
