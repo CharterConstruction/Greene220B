@@ -47,7 +47,10 @@ namespace HelloWorld
             users.Add(new Models.User { Name = "Steve", Password = "StevePwd" });
             users.Add(new Models.User { Name = "Lisa", Password = "LisaPwd" });
             users.Add(new Models.User { Name = "Abe", Password = "Xerox" });
-            users.Add(new Models.User { Name = "Yinzer", Password = "Jagoff" });
+            users.Add(new Models.User { Name = "Jacob", Password = "Password123" });
+            users.Add(new Models.User { Name = "Chris", Password = "Money$$" });
+            users.Add(new Models.User { Name = "Adam", Password = "Oriole" });
+            users.Add(new Models.User { Name = "Yinzer", Password = "Pittsburgh" });
 
             uxList.ItemsSource = users;
 

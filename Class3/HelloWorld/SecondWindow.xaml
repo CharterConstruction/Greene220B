@@ -9,7 +9,7 @@
     <Grid>
         <ListView x:Name="uxList" ItemsSource="{Binding user}" SelectionMode="Single" GridViewColumnHeader.Click="uxList_Click">
             <ListView.View>
-                <GridView AllowsColumnReorder="True" ColumnHeaderToolTip="List of Users and Stuff">
+                <GridView AllowsColumnReorder="True">
                     <GridViewColumn  Header="Name" DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Header="Password" DisplayMemberBinding="{Binding Password}"/>
                 </GridView>
