@@ -5000,11 +5000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class3\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class4\\HelloWorld\\HelloWorld.csproj",
       "projectName": "HelloWorld",
-      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class3\\HelloWorld\\HelloWorld.csproj",
+      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class4\\HelloWorld\\HelloWorld.csproj",
       "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class3\\HelloWorld\\obj\\",
+      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class4\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",

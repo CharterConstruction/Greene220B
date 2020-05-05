@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\philg\Documents\GitHub\Greene220B\Class3\HelloWorld\obj\Debug\netcoreapp3.1\
+C:\Users\philg\Documents\GitHub\Greene220B\Class4\HelloWorld\obj\Debug\netcoreapp3.1\
 HelloWorld
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\philg\Documents\GitHub\Greene220B\Class3\HelloWorld\App.xaml
-31646506151
+C:\Users\philg\Documents\GitHub\Greene220B\Class4\HelloWorld\App.xaml
+7-1942881188
 
-61954825562
+10-231383358
 210-1278983181
-MainWindow.xaml;PanelWindow.xaml;SecondWindow.xaml;
+ControlWindow.xaml;MainWindow.xaml;MenuWindow.xaml;NavigatorWindow.xaml;PanelWindow.xaml;SecondWindow.xaml;StatusWindow.xaml;
 
 False
 

@@ -1,0 +1,17 @@
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe_MarkupCompile.cache
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe_MarkupCompile.lref
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.exe
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.deps.json
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.runtimeconfig.dev.json
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.dll
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.g.resources
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.dll
+C:\Users\philg\Documents\GitHub\Greene220B\Class5\TicTacToe\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.pdb

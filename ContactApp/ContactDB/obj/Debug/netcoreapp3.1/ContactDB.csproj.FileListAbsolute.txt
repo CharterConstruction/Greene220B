@@ -1,0 +1,10 @@
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\bin\Debug\netcoreapp3.1\ContactDB.deps.json
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\bin\Debug\netcoreapp3.1\ContactDB.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\bin\Debug\netcoreapp3.1\ContactDB.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\obj\Debug\netcoreapp3.1\ContactDB.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\obj\Debug\netcoreapp3.1\ContactDB.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\obj\Debug\netcoreapp3.1\ContactDB.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\obj\Debug\netcoreapp3.1\ContactDB.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\obj\Debug\netcoreapp3.1\ContactDB.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\bin\Debug\netcoreapp3.1\ContactDB.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactDB\bin\Debug\netcoreapp3.1\ContactDB.runtimeconfig.dev.json
