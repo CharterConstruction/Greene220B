@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class3\\Cars\\Cars.csproj",
+      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class4\\Cars\\Cars.csproj",
       "projectName": "Cars",
-      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class3\\Cars\\Cars.csproj",
+      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class4\\Cars\\Cars.csproj",
       "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class3\\Cars\\obj\\",
+      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\Class4\\Cars\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",

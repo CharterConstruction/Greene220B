@@ -31,12 +31,6 @@ namespace HelloWorld
             
         }
 
-        private void uxList_Click(object sender, RoutedEventArgs e)
-        {
-            var selectedColumn = (GridViewColumnHeader)e.OriginalSource;
-            ToggleSortByColumn(selectedColumn);
-
-        }
 
 
         private void InitializeUsers()
@@ -56,6 +50,12 @@ namespace HelloWorld
 
         }
 
+        private void uxList_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedColumn = (GridViewColumnHeader)e.OriginalSource;
+            ToggleSortByColumn(selectedColumn);
+
+        }
 
 
         private void ToggleSortByColumn(GridViewColumnHeader columnHeader)

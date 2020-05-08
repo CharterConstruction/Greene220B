@@ -6,3 +6,6 @@ C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\obj\Debu
 C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.AssemblyInfo.cs
 C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.dll
 C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\bin\Debug\netcoreapp3.1\ContactDB.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\bin\Debug\netcoreapp3.1\ContactDB.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ContactApp\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.csproj.CopyComplete
