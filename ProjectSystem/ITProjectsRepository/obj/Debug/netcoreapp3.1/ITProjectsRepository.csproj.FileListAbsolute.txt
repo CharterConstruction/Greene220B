@@ -1,0 +1,13 @@
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsRepository.deps.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsRepository.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITProjectsRepository.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITProjectsRepository.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITProjectsRepository.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsRepository.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsRepository.runtimeconfig.dev.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsRepository.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsDB.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITProjectsDB.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITProjectsRepository.csproj.CopyComplete
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITProjectsRepository.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITProjectsRepository.pdb

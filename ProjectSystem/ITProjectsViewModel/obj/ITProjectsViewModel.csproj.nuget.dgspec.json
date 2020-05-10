@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsViewModel\\ITProjectsViewModel.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
+        "projectName": "ITProjectsDB",
+        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
+        "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj",
+        "projectName": "ITProjectsRepository",
+        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj",
+        "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj": {
+                "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsViewModel\\ITProjectsViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsViewModel\\ITProjectsViewModel.csproj",
+        "projectName": "ITProjectsViewModel",
+        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsViewModel\\ITProjectsViewModel.csproj",
+        "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj": {
+                "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

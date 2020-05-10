@@ -78,7 +78,7 @@ namespace ContactApp
         private void uxFileDelete_Click(object sender, RoutedEventArgs e)
         {
             App.ContactRepository.Remove(selectedContact.Id);
-            selectedContact = null;
+            selectedContact = null; 
             LoadContacts();
         }
 
