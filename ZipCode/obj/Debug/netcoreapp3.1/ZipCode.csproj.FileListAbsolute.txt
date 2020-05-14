@@ -1,0 +1,17 @@
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\bin\Debug\netcoreapp3.1\ZipCode.exe
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\bin\Debug\netcoreapp3.1\ZipCode.deps.json
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\bin\Debug\netcoreapp3.1\ZipCode.runtimeconfig.json
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\bin\Debug\netcoreapp3.1\ZipCode.runtimeconfig.dev.json
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\bin\Debug\netcoreapp3.1\ZipCode.dll
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\bin\Debug\netcoreapp3.1\ZipCode.pdb
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode.csprojAssemblyReference.cache
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode_MarkupCompile.cache
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode_MarkupCompile.lref
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode.g.resources
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode.AssemblyInfoInputs.cache
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode.AssemblyInfo.cs
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode.dll
+C:\Users\Phil\Documents\GitHub\Greene220B\ZipCode\obj\Debug\netcoreapp3.1\ZipCode.pdb
