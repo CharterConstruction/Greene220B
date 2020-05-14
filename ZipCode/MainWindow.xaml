@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZipCode"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="200">
+        Title="MainWindow" Height="200" Width="250">
     <Grid>
         <StackPanel Margin="0,0,0,45">
             <TextBlock Text="Please Enter a Zip Code" HorizontalAlignment="Center"/>
-            <TextBox x:Name="uxZipCode" Margin="20,5,20,5" PreviewTextInput="uxZipCode_PreviewTextInput"/>
-            <TextBlock x:Name="uxStatusMessage" HorizontalAlignment="Center"/>
-            <Button x:Name="uxSubmit" Margin="5" Content="Submit" Width="100"/>            
+            <TextBox x:Name="uxZipCode" Margin="20,5,20,5" Width="200" TextChanged="uxZipCode_TextChanged"/>
+            <TextBlock x:Name="uxStatusMessage" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+            <Button x:Name="uxSubmit" Margin="5" Content="Submit" Width="100" Click="uxSubmit_Click"/>            
         </StackPanel>
             
     </Grid>
