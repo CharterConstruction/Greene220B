@@ -1,0 +1,48 @@
+﻿<Window x:Class="HelloWorld.TabControlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorld"
+        mc:Ignorable="d"
+        Title="TabControlWindow" Height="450" Width="800">
+    <Grid>        
+        <DockPanel>
+            <TabControl x:Name="uxTab">
+                <TabItem Header="First">
+                    <StackPanel x:Name="uxFirstStackPanel">
+                        <TextBlock Text="Name:"/>
+                        <TextBox></TextBox>
+                        <TextBlock Text="Phone Number:"/>
+                        <TextBox></TextBox>
+
+                        
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Second">
+                    <Canvas Height="{Binding ElementName=uxFirstStackPanel,Path=ActualHeight}">
+                        <Ellipse Canvas.Top="10" Canvas.Left="10" Height="50" Width="50" Fill="Blue" />
+                    </Canvas>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>                
+                        <StackPanel Orientation="Horizontal">
+                            <!--=/WpfTutorialSamples;component/Images/bullet_blue.png-->
+                            <Image Source="C:\Users\philg\Documents\GitHub\Greene220B\Class7\HelloWorld\images\icons8-small-lens-16.png" />
+                            <TextBlock Text="Green" Foreground="Green" />
+                        </StackPanel>
+                    </TabItem.Header>
+                </TabItem>
+                <TabItem Header="Fourth and long"></TabItem>
+                <TabItem Header="Really long title"></TabItem>
+            </TabControl>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Bottom" Margin="5,300,5,5">
+            <Button x:Name="uxPrevTab"  Content="Previous" Width="80" Height="20" Margin="5" Click="uxPrevTab_Click"/>
+            <Button x:Name="uxNextTab" Content="Next" Width="80" Height="20" Margin="5"  Click="uxNextTab_Click"/>
+            <Button x:Name="uxSelectedTab" Content="Selected" Width="80" Height="20" Margin="5" Click="uxSelectedTab_Click"/>
+            <Button x:Name="uxResetTab" Content="Reset" Width="80" Height="20" Margin="5" Click="uxResetTab_Click"/>
+        </DockPanel>
+
+    </Grid>
+</Window>

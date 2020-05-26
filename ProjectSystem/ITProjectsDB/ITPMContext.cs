@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace ITProjectsDB
+namespace ITPM.Database
 {
     public partial class ITPMContext : DbContext
     {
@@ -27,7 +27,7 @@ namespace ITProjectsDB
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=(local);Initial Catalog=ITPM;integrated security=True");
+                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=ITPM;integrated security=True");
             }
         }
 

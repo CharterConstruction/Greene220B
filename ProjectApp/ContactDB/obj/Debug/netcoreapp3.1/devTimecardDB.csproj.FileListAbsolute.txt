@@ -1,0 +1,10 @@
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\bin\Debug\netcoreapp3.1\devTimecardDB.deps.json
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\bin\Debug\netcoreapp3.1\devTimecardDB.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\bin\Debug\netcoreapp3.1\devTimecardDB.runtimeconfig.dev.json
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\bin\Debug\netcoreapp3.1\devTimecardDB.dll
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\bin\Debug\netcoreapp3.1\devTimecardDB.pdb
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\obj\Debug\netcoreapp3.1\devTimecardDB.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\obj\Debug\netcoreapp3.1\devTimecardDB.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\obj\Debug\netcoreapp3.1\devTimecardDB.dll
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\obj\Debug\netcoreapp3.1\devTimecardDB.pdb
+C:\Users\philg\Documents\GitHub\Dev\Timecard\ContactDB\obj\Debug\netcoreapp3.1\devTimecardDB.csprojAssemblyReference.cache

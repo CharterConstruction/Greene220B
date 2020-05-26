@@ -1,0 +1,3 @@
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITPM.ViewModels.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITPM.ViewModels.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITPM.ViewModels.AssemblyInfo.cs

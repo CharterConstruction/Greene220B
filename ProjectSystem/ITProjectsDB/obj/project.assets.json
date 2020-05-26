@@ -5000,11 +5000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
-      "projectName": "ITProjectsDB",
-      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
+      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITPM.Database.csproj",
+      "projectName": "ITPM.Database",
+      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITPM.Database.csproj",
       "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\obj\\",
+      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,117 @@
+﻿<Window x:Class="TimecardAdminApp.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        xmlns:dates="clr-namespace:TimecardAdminApp.Dates"
+        xmlns:employees="clr-namespace:TimecardAdminApp.Employees"
+        xmlns:entries ="clr-namespace:TimecardAdminApp.TimecardTimeEntryViews"
+        xmlns:jobs="clr-namespace:TimecardAdminApp.Jobs"
+        
+        
+        
+        xmlns:local="clr-namespace:TimecardAdminApp"
+        mc:Ignorable="d"
+        Title="TestWindow" Height="600" Width="1200">
+    
+    
+    <Window.DataContext>
+        <local:TimecardTestViewModel/>
+    </Window.DataContext>
+
+    
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type jobs:JobListViewModel}">
+            <jobs:JobListView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type employees:EmployeeListViewModel}">
+            <employees:EmployeeListView />
+        </DataTemplate>
+    </Window.Resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="355*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel 
+            Grid.Column="0"
+            Grid.Row="1"
+            Margin="5">
+            <DataGrid   x:Name="uxEmployeeList"
+                        ItemsSource="{Binding Employees}"
+                        AutoGenerateColumns="False"
+                        CanUserAddRows="False"                        
+                        Grid.Row="1">
+
+                <DataGrid.Columns>                   
+
+                    <DataGridTextColumn Binding="{Binding EmployeeName}" Header="Name" Width="Auto"/>
+
+                    <DataGridTemplateColumn Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button 
+                                    Content="Select"
+                                    Command="{Binding OnClick}"
+                                    CommandParameter="{Binding ElementName=uxEmployeeList, Path=SelectedItems}"
+                                    Grid.Column="1" 
+                                    Margin="10,2,10,2" 
+                                    MinWidth="75"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </StackPanel>
+
+
+
+
+
+        <StackPanel 
+            Grid.Column="1"
+            Grid.Row="1"
+            Margin="5"
+            >
+            <DataGrid ItemsSource="{Binding TimecardViews}"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          MinColumnWidth="150"
+                          Grid.Row="1" Grid.ColumnSpan="2">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding RowLabel}" Header="Job" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding EntryGroup}" Header="Phase" Width="Auto"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+    -->
+</Window>

@@ -1,0 +1,13 @@
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Database.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITPM.Repository.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITPM.Repository.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITPM.Repository.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Repository.deps.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Repository.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Repository.runtimeconfig.dev.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Repository.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Repository.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\bin\Debug\netcoreapp3.1\ITPM.Database.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITPM.Repository.csproj.CopyComplete
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITPM.Repository.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsRepository\obj\Debug\netcoreapp3.1\ITPM.Repository.pdb

@@ -5,9 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using ITProjectsViewModel;
 
-namespace ITProjectApp
+
+namespace ITPM.App
 {
     /// <summary>
     /// Interaction logic for App.xaml

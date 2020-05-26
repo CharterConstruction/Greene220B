@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ITProjectsDB;
+using ITPM.Database;
 
-namespace ITProjectsRepository
+namespace ITPM.Repository
 {
     internal class DatabaseManager
     {

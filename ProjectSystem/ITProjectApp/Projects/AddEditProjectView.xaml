@@ -1,0 +1,113 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ITPM.App.Projects"
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="ITPM.App.Projects.AddEditProjectView"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="600">
+    
+    
+    <b:Interaction.Triggers>
+        <b:EventTrigger EventName="Loaded">
+            <b:CallMethodAction TargetObject="{Binding}" MethodName="Load"/>
+        </b:EventTrigger>
+    </b:Interaction.Triggers>
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="400*"/>            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Project Name"
+                Grid.Row ="0" 
+                Grid.Column="0" 
+                Margin="5"
+                />
+        <TextBox Text="{Binding SelectedProject.ProjectName, UpdateSourceTrigger=PropertyChanged}"      
+                 Grid.Row ="0" 
+                 Grid.Column="1"
+                 />
+        
+        <Label Grid.Row ="1" 
+               Grid.Column="0"
+               Content="Project Concept"/>
+        <TextBox Text="{Binding SelectedProject.ProjectConcept, UpdateSourceTrigger=PropertyChanged}"  
+                 Grid.Row ="1" 
+                 Grid.Column="1"
+                 Margin="5"
+                 TextWrapping="Wrap"
+                 />
+        <DockPanel 
+            Grid.Column="1"
+            Grid.Row="2"
+            >
+            <ComboBox 
+                ItemsSource="{Binding Statuses}"
+                SelectedItem="{Binding SelectedProject.Status, UpdateSourceTrigger=PropertyChanged}"                       
+                IsSynchronizedWithCurrentItem="True"
+                Height="30" 
+                Width="150">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding StatusName, UpdateSourceTrigger=PropertyChanged}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                
+            </ComboBox>
+
+            
+            <!--
+            //WORKS for first one..  just doesn't update
+            <ComboBox 
+                ItemsSource="{Binding Statuses}"
+                SelectedItem="{Binding SelectedProjectStatus, UpdateSourceTrigger=PropertyChanged }"                
+                IsSynchronizedWithCurrentItem="True"
+                Height="30" 
+                Width="150">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding StatusName}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                
+            </ComboBox>
+            
+            DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}},Path=DataContext}"  
+            
+            
+            "{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}},Path=DataContext}"
+            
+            
+            DataContext="{Binding Statuses,Path=StatusName}"  
+            
+            -->
+        </DockPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2">
+        <TextBlock DataContext="{Binding SelectedProjectStatus}" Text="{Binding StatusName}"/>
+        <TextBlock DataContext="{Binding SelectedProject.Status}" Text="{Binding StatusName}"/>
+        </StackPanel>
+
+        <StackPanel            
+            Grid.Column="0"
+            Grid.Row="3"
+            >
+
+            <TextBlock Text="Test"/>
+            <Button Content="Test" Click="Button_Click"/>
+            
+            <Button Content="Save"
+                            Command="{Binding SaveProjectCommand}"
+                            CommandParameter="{Binding SelectedProject}"
+                            Margin="5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

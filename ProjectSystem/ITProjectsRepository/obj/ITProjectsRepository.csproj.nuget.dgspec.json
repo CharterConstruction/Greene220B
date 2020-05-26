@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj": {}
+    "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj": {
+    "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
+        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
         "projectName": "ITProjectsDB",
-        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
+        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj",
         "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\obj\\",
+        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj": {
+    "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj",
+        "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj",
         "projectName": "ITProjectsRepository",
-        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj",
+        "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsRepository\\ITProjectsRepository.csproj",
         "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsRepository\\obj\\",
+        "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -91,8 +91,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj": {
-                "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj"
+              "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj": {
+                "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\ITProjectsDB\\ITProjectsDB.csproj"
               }
             }
           }

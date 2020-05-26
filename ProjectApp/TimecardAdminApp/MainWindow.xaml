@@ -1,0 +1,87 @@
+﻿<Window x:Class="TimecardAdminApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:dateViews="clr-namespace:TimecardAdminApp.DateViews"
+        xmlns:employees="clr-namespace:TimecardAdminApp.Employees"
+        xmlns:entries ="clr-namespace:TimecardAdminApp.TimecardTimeEntryViews"
+        xmlns:jobs="clr-namespace:TimecardAdminApp.Jobs"
+        
+        xmlns:local="clr-namespace:TimecardAdminApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    
+    <Window.Resources>
+        
+        <!--
+            <DataTemplate DataType="{x:Type dateViews:WeekViewModel}">
+            <dateViews:WeekView />
+            </DataTemplate>
+        -->
+
+        <DataTemplate DataType="{x:Type jobs:JobListViewModel}">
+            <jobs:JobListView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type employees:EmployeeListViewModel}">
+            <employees:EmployeeListView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type entries:TimecardTimeEntryViewUIModel}">
+            <entries:TimecardTimeEntryViewUI/>
+        </DataTemplate>
+        
+    </Window.Resources>
+    
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <Grid x:Name="NavBar">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Button Content="Jobs"
+                    Command="{Binding NavCommand}"
+                    CommandParameter="jobs"
+                    Grid.Column="0" />
+            
+            <Button Content="Employees"
+                    Command="{Binding NavCommand}"
+                    CommandParameter="employees"
+                    Grid.Column="2" />
+            
+        </Grid>
+        <!--MaxHeight ="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}},Path=ActualHeight}">-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*" MinWidth="100" MaxWidth ="300"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="5">                
+                <Grid x:Name="uxList">
+                    <ContentControl Content="{Binding CurrentListViewModel}" />
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="5">
+                <Grid x:Name="uxDetail">
+                    <ContentControl Content="{Binding CurrentDetailViewModel}" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

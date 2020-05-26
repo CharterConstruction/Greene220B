@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "ContactDB\Database.csproj", "{CD57D00C-8B57-47D7-A54F-800B9A080ABD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimecardRepository", "ContactRepository\TimecardRepository.csproj", "{182ACB7F-19DC-4751-ACEF-5526C4763B74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimecardAdminApp", "TimecardAdminApp\TimecardAdminApp.csproj", "{3971BE6E-23BF-4E56-998D-D550C7BDEBF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{3FE81D64-B130-4BD2-9FDA-941341732D4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimecardRepositoryTests", "TimecardRepositoryTests\TimecardRepositoryTests.csproj", "{E3E67F03-B50D-4886-8EFE-62DF7BFC4C4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControl", "CustomControl\CustomControl.csproj", "{CD154DDE-2234-4ECC-A965-50ACE95914DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD57D00C-8B57-47D7-A54F-800B9A080ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD57D00C-8B57-47D7-A54F-800B9A080ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD57D00C-8B57-47D7-A54F-800B9A080ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD57D00C-8B57-47D7-A54F-800B9A080ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182ACB7F-19DC-4751-ACEF-5526C4763B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182ACB7F-19DC-4751-ACEF-5526C4763B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182ACB7F-19DC-4751-ACEF-5526C4763B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182ACB7F-19DC-4751-ACEF-5526C4763B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3971BE6E-23BF-4E56-998D-D550C7BDEBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3971BE6E-23BF-4E56-998D-D550C7BDEBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3971BE6E-23BF-4E56-998D-D550C7BDEBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3971BE6E-23BF-4E56-998D-D550C7BDEBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE81D64-B130-4BD2-9FDA-941341732D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE81D64-B130-4BD2-9FDA-941341732D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE81D64-B130-4BD2-9FDA-941341732D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE81D64-B130-4BD2-9FDA-941341732D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E67F03-B50D-4886-8EFE-62DF7BFC4C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E67F03-B50D-4886-8EFE-62DF7BFC4C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E67F03-B50D-4886-8EFE-62DF7BFC4C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E67F03-B50D-4886-8EFE-62DF7BFC4C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD154DDE-2234-4ECC-A965-50ACE95914DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD154DDE-2234-4ECC-A965-50ACE95914DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD154DDE-2234-4ECC-A965-50ACE95914DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD154DDE-2234-4ECC-A965-50ACE95914DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DB5259C-D430-46B0-B68A-90BA4A7F96A9}
+	EndGlobalSection
+EndGlobal

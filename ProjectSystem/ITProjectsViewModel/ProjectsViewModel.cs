@@ -5,9 +5,9 @@ using System.Linq;
 //using ITProjectsRepository;
 //using static ITProjectsRepository.ProjectRepository;
 
-using ITProjectsViewModel.Models;
+using ITPM.ViewModels.Models;
 
-namespace ITProjectsViewModel
+namespace ITPM.ViewModels
 {
     public class ProjectsViewModel
     {

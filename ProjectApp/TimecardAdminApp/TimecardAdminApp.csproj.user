@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="BaseUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DateViews\WeekView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Employees\EmployeeSearchUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Jobs\JobListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerEmployees\ManagerEmployeeListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TestWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TimecardTimeEntryViews\TimecardTimeEntryViewUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TimeEntryRows\TimeEntryRowView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BaseUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DateViews\WeekView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Employees\EmployeeListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Employees\EmployeeSearchUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Jobs\JobListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagerEmployees\ManagerEmployeeListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TestWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TimecardTimeEntryViews\TimecardTimeEntryViewUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TimeEntryRows\TimeEntryRowView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

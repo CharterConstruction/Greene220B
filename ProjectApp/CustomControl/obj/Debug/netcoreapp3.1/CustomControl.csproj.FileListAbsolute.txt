@@ -1,0 +1,13 @@
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\bin\Debug\netcoreapp3.1\CustomControl.deps.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\bin\Debug\netcoreapp3.1\CustomControl.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\bin\Debug\netcoreapp3.1\CustomControl.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl_MarkupCompile.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl_MarkupCompile.lref
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\Themes\Generic.baml
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl.g.resources
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\CustomControl\obj\Debug\netcoreapp3.1\CustomControl.pdb

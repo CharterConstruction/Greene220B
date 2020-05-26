@@ -1,0 +1,13 @@
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactRepository.deps.json
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactRepository.runtimeconfig.json
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactRepository.runtimeconfig.dev.json
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactRepository.dll
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactRepository.pdb
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactDB.dll
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\bin\Debug\netcoreapp3.1\ContactDB.pdb
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.csprojAssemblyReference.cache
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.AssemblyInfoInputs.cache
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.AssemblyInfo.cs
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.csproj.CopyComplete
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.dll
+C:\Users\philg\Desktop\ContactSolution\ContactRepository\obj\Debug\netcoreapp3.1\ContactRepository.pdb

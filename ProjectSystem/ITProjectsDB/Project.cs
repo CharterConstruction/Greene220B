@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ITProjectsDB
+namespace ITPM.Database
 {
     public partial class Project
     {

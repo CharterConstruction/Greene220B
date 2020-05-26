@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITProjectsDB", "ITProjectsDB\ITProjectsDB.csproj", "{2EA5BC63-27F1-4078-BA38-5567D0AD5623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITPM.Database", "ITProjectsDB\ITPM.Database.csproj", "{2EA5BC63-27F1-4078-BA38-5567D0AD5623}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITProjectApp", "ITProjectApp\ITProjectApp.csproj", "{BC42182D-0206-4C4F-BECE-E1C26945B09F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITPM.App", "ITProjectApp\ITPM.App.csproj", "{BC42182D-0206-4C4F-BECE-E1C26945B09F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITProjectsRepository", "ITProjectsRepository\ITProjectsRepository.csproj", "{B4D710D8-2432-47F8-AC03-93CF81DE0844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITPM.Repository", "ITProjectsRepository\ITPM.Repository.csproj", "{B4D710D8-2432-47F8-AC03-93CF81DE0844}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITProjectsViewModel", "ITProjectsViewModel\ITProjectsViewModel.csproj", "{30DE4A70-B610-435B-9DDB-20BE5AC3FBFE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Helper\Common.csproj", "{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		{B4D710D8-2432-47F8-AC03-93CF81DE0844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4D710D8-2432-47F8-AC03-93CF81DE0844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4D710D8-2432-47F8-AC03-93CF81DE0844}.Release|Any CPU.Build.0 = Release|Any CPU
-		{30DE4A70-B610-435B-9DDB-20BE5AC3FBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30DE4A70-B610-435B-9DDB-20BE5AC3FBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30DE4A70-B610-435B-9DDB-20BE5AC3FBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30DE4A70-B610-435B-9DDB-20BE5AC3FBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Release|Any CPU.ActiveCfg = Release|Any CPU

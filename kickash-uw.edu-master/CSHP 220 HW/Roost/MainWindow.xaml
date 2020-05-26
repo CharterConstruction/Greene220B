@@ -1,0 +1,58 @@
+﻿<Window x:Class="Roost.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Roost"
+        mc:Ignorable="d"
+        Title="Roost" d:DesignWidth="519.257" d:DesignHeight="229.92">
+
+    <StackPanel x:Name="uxContainer">
+        <Menu>
+            <MenuItem x:Name="uxNew" Header="_New" Loaded="uxNew_Loaded">
+                <MenuItem x:Name="uxNewMessage" Header="_Message" Click="uxNewMessage_Click"/>
+                <MenuItem x:Name="uxNewCollection" Header="_Collection" Click="uxNewCollection_Click" />
+                <MenuItem x:Name="uxNewSchedule" Header="_Schedule" Click="uxNewSchedule_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="uxOpen" Header="_Open" Loaded="uxOpen_Loaded">
+                <MenuItem x:Name="uxOpenMessages" Header="_Messages" Click="uxOpenMessages_Click"/>
+                <MenuItem x:Name="uxOpenCollections" Header="_Collections" Click="uxOpenCollections_Click"/>
+                <MenuItem x:Name="uxOpenSchedules" Header="_Schedules" Click="uxOpenSchedules_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="uxEdit" Header="_Edit" Loaded="uxEdit_Loaded">
+                <MenuItem x:Name="uxEditMessage" Header="_Message" Click="uxEditMessage_Click"/>
+                <MenuItem x:Name="uxEditCollection" Header="_Collection" Click="uxEditCollection_Click"/>
+                <MenuItem x:Name="uxEditSchedule" Header="_Schedule" Click="uxEditSchedule_Click"/>
+            </MenuItem>
+            
+            <MenuItem x:Name="uxHelp" Header="_Help" Loaded="uxHelp_Loaded">
+                <MenuItem x:Name="uxHelpMessages" Header="_Messages" Click="uxHelpMessages_Click"/>
+                <MenuItem x:Name="uxHelpCollections" Header="_Collections" Click="uxHelpCollections_Click"/>
+                <MenuItem x:Name="uxHelpSchedules" Header="_Schedules" Click="uxHelpSchedules_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Label x:Name="uxRecentContactsLabel" Content="Recent Contacts"/>
+        <ListView x:Name="uxRecentContactsList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding ContactName}" Header="Name" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding ContactPhoneNumber}" Header="Phone Number" Width="100" />
+                    <GridViewColumn DisplayMemberBinding="{Binding ContactSent}" Header="Messages Sent" Width="100" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label x:Name="uxRecentMessagesLabel" Content="Recent Messages"/>
+        <ListView x:Name="uxRecentMessagesList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding MessageName}" Header="Name" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding MessageBody}" Header="Message Preview" Width="100" />
+                    <GridViewColumn DisplayMemberBinding="{Binding ContactSent}" Header="Sent To" Width="100" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </StackPanel>
+</Window>

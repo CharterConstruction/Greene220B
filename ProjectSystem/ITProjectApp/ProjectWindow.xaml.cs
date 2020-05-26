@@ -9,11 +9,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using ITProjectsViewModel;
-using ITProjectsViewModel.Models;
+//using ITPM.ViewModels;
+//using ITPM.ViewModels.Models;
 
 
-namespace ITProjectApp
+namespace ITPM.App
 {
     /// <summary>
     /// Interaction logic for ProjectWindow.xaml
@@ -26,7 +26,7 @@ namespace ITProjectApp
             ShowInTaskbar = false;
         }
 
-        public ProjectModel Project { get; set; }
+        //public Project Project { get; set; }
 
         private void uxSubmit_Click(object sender, RoutedEventArgs e)
         {
@@ -46,16 +46,19 @@ namespace ITProjectApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            /*
             if (Project != null)
             {
                 uxSubmit.Content = "Update";
             }
             else
             {
-                Project = new ProjectModel();                
+                //Project = new ProjectModel();                
             }
 
-            uxGrid.DataContext = Project;
+            //uxGrid.DataContext = Project;
+            
+             */
         }
 
     }

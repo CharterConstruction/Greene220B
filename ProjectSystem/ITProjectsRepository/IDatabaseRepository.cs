@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ITProjectsRepository
+namespace ITPM.Repository
 {
     public interface IDataRepository<T>
     {
@@ -13,7 +13,7 @@ namespace ITProjectsRepository
 
         bool Update(T inputObject);
 
-        IEnumerable<T> GetAll();       
+        IEnumerable<T> GetAll();      
 
     }
 }

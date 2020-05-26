@@ -1,0 +1,9 @@
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\bin\Debug\netcoreapp3.1\Database.deps.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\bin\Debug\netcoreapp3.1\Database.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\bin\Debug\netcoreapp3.1\Database.runtimeconfig.dev.json
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\bin\Debug\netcoreapp3.1\Database.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\bin\Debug\netcoreapp3.1\Database.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\obj\Debug\netcoreapp3.1\Database.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\obj\Debug\netcoreapp3.1\Database.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\obj\Debug\netcoreapp3.1\Database.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectApp\ContactDB\obj\Debug\netcoreapp3.1\Database.pdb

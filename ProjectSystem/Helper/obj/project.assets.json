@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\Helper\\Helper.csproj",
-      "projectName": "Helper",
-      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\Helper\\Helper.csproj",
+      "projectUniqueName": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\Helper\\Common.csproj",
+      "projectName": "Common",
+      "projectPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\Helper\\Common.csproj",
       "packagesPath": "C:\\Users\\philg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Dev\\C#\\ProjectSystem\\Helper\\obj\\",
+      "outputPath": "C:\\Users\\philg\\Documents\\GitHub\\Greene220B\\ProjectSystem\\Helper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\philg\\AppData\\Roaming\\NuGet\\NuGet.Config",
