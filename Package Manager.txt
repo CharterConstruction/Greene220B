@@ -1,0 +1,10 @@
+Database Project
+
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.1.2
+
+Scaffold-DbContext 'Data Source=(local);Initial Catalog=ITPM;integrated security=True' Microsoft.EntityFrameworkCore.SqlServer
+
+
+All Others:
+Install-Package Microsoft.EntityFrameworkCore.Tools

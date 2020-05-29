@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../lib/css/elements.theme.css">
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" type="text/css">
+    <script src="../vendor/jquery/jquery.slim.min.js"></script>
+    <script src="../vendor/popper.js/popper.min.js"></script>
+    <script src="../vendor/bootstrap/bootstrap.min.js"></script>
+    <style lang="css">
+      body {
+        height: 100%;
+      }
+
+      .demo-tabs {
+        background: #fff;
+        border-bottom: 1px solid #e9ecef;
+        padding-top: 15px;
+      }
+
+      .demo-tabs .nav-tabs {
+        margin-bottom: -1px;
+      }
+
+      .demo-tabs .nav-item:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      .demo-tabs .nav-tabs .nav-link.active,
+      .demo-tabs .nav-tabs .nav-item.show .nav-link {
+        background-color: #f2f5f7;
+        border-bottom-color: #f2f5f7;
+      }
+
+      .demo-tabs-dropdown {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        bottom: 0;
+      }
+
+      .demo-tabs-dropdown .dropdown-toggle {
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .demo-tabs-dropdown.show .dropdown-toggle,
+      .demo-tabs-dropdown .dropdown-toggle:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+      }
+
+      .demo-tabs-dropdown .dropdown-toggle:after {
+        margin: 0 0.1em;
+        vertical-align: 0.18em;
+      }
+
+      .demo-tabs-dropdown .dropdown-menu {
+        margin-top: 2px;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+      }
+
+      .tab-content {
+        flex: 1 1 auto;
+        display: flex;
+      }
+
+      #content-iframe {
+        border: 0;
+        overflow: auto;
+        flex: 1 1 auto;
+      }
+    </style>
+    <script>
+      $(document).on('click', '.demo-tabs a', function(e) {
+        var tab = $(this).data('tab')
+        $(tab).tab('show')
+      })
+
+      function setIFrameHeight() {
+        var iframe = $('iframe[name = content-iframe]')[0];
+        var parent_iframe = $('[name = demo-frame]', window.parent.document)[0];
+        if (iframe) {
+          if (parent_iframe) {
+            parent_iframe.height = ""
+          }
+          iframe.height = ""
+          var doc = iframe.contentDocument ? iframe.contentDocument : iframe.contentWindow.document;
+          var height = Math.max(doc.body.scrollHeight, doc.body.offsetHeight, doc.documentElement.clientHeight, doc.documentElement.scrollHeight, doc.documentElement.offsetHeight)
+          iframe.height = !isNaN(height) ? height + 'px' : '';
+          if (window.parent.setDemoFrameHeight) {
+            window.parent.setDemoFrameHeight()
+          }
+        }
+      }
+      // window.addEventListener('resize', setIFrameHeight);
+    </script>
+  </head>
+
+  <body>
+    <div class="d-flex flex-column h-100">
+      <div class="demo-tabs">
+        <div class="container">
+          <div class="px-sm-3">
+            <ul class="nav nav-tabs flex-nowrap">
+              <li class="nav-item position-relative">
+                <a href="./pages/overview.html" target="content-iframe" id="pages-tab" data-tab="#pages-tab" class="nav-link px-2 px-sm-3 pr-3 py-1 py-sm-2 active">
+                  <span class="pr-2">Pages</span>
+                </a>
+                <div class="demo-tabs-dropdown dropdown">
+                  <div class="my-1 my-sm-2 p-0 px-1 dropdown-toggle" data-toggle="dropdown"></div>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-header">Pages List:</div>
+                    <a class="dropdown-item" target="content-iframe" data-tab="#pages-tab" href="./pages/overview.html">Overview</a>
+                    <a class="dropdown-item" target="content-iframe" data-tab="#pages-tab" href="./pages/users.html">Users</a>
+                    <a class="dropdown-item" target="content-iframe" data-tab="#pages-tab" href="./pages/settings.html">Profile</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="./components/index.html" target="content-iframe" id="components-tab" data-tab="#components-tab" class="nav-link px-2 px-sm-3 py-1 py-sm-2">Components</a>
+              </li>
+              <li class="nav-item">
+                <a href="../../../../k-sink.html" target="content-iframe" id="bootstrap-tab" data-tab="#bootstrap-tab" class="nav-link px-2 px-sm-3 py-1 py-sm-2">Bootstrap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content">
+        <iframe src="./pages/overview.html" id="content-iframe" name="content-iframe" onLoad="setIFrameHeight()" />
+      </div>
+    </div>
+  </body>
+
+</html>

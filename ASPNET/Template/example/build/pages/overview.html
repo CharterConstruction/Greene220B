@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../lib/css/elements.theme.css">
+    <link rel="stylesheet" href="../../lib/components/elements.components.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" type="text/css">
+    <script src="../../vendor/jquery/jquery.slim.min.js"></script>
+    <script src="../../vendor/popper.js/popper.min.js"></script>
+    <script src="../../vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="../../vendor/Chart.js/Chart.min.js"></script>
+    <script src="../../vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="../../vendor/select2/js/select2.min.js"></script>
+    <script src="../../vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../../vendor/mohithg-switchery/switchery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="e-content">
+        <div class="row">
+          <div class="col">
+            <nav class="e-navbar navbar navbar-expand-md card my-3 px-lg-4">
+              <div class="e-navbar__cont flex-md-nowrap py-2">
+                <button class="navbar-toggler btn" type="button"><span class="fa fa-bars"></span></button>
+                <div class="navbar-brand d-none d-md-block">
+                  <a class="e-logo mx-4 active" href="./overview.html">
+                    <span>Elements <small>stay simple</small></span>
+                  </a>
+                </div>
+                <div class="e-navbar__title navbar-text d-md-none my-2">Overview</div>
+                <div class="e-navbar__nav navbar-collapse order-4 order-md-2 collapse navbar-collapse">
+                  <ul class="navbar-nav pt-3 pt-md-0">
+                    <li class="nav-item"><a class="nav-link active" href="./overview.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./users.html">CRUD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./settings.html">Settings</a></li>
+                  </ul>
+                </div>
+                <div class="e-navbar__actions ml-3">
+                  <div>
+                    <a class="btn btn-success d-md-none" href="./settings.html">
+                      <i class="fa fa-user-circle"></i>
+                    </a>
+                    <div class="btn-group d-none d-md-block">
+                      <button class="btn btn-success"><i class="fa fa-bell"></i></button>
+                      <a class="btn btn-success" href="./settings.html">
+                        <span class="mx-1">John Smith</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+        <div class="row flex-lg-nowrap">
+          <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+            <div class="card p-3">
+              <div class="e-navlist e-navlist--active-bg">
+                <ul class="nav">
+                  <li class="nav-item"><a class="nav-link px-2 active" href="./overview.html"><i class="fa fa-fw fa-bar-chart mr-1"></i><span>Overview</span></a></li>
+                  <li class="nav-item"><a class="nav-link px-2" href="./users.html"><i class="fa fa-fw fa-clone mr-1"></i><span>CRUD</span></a></li>
+                  <li class="nav-item"><a class="nav-link px-2" href="./settings.html"><i class="fa fa-fw fa-cog mr-1"></i><span>Settings</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="row flex-column-reverse flex-lg-row">
+              <div class="col-12 col-lg-9 col-xl-10 mb-3">
+                <div class="e-panel card">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h6 class="mr-2"><span>Area Chart</span><small class="px-1">Visual Data</small></h6>
+                    </div>
+                    <div class="mt-3">
+                      <canvas id="area-triple-chart" height="190"></canvas>
+                      <script>
+                        new Chart(document.getElementById("area-triple-chart"), {
+                          type: 'line',
+                          data: {
+                            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                            datasets: [{
+                                label: 'Dataset 1',
+                                borderColor: 'rgba(87, 228, 198, 0.7)',
+                                backgroundColor: 'rgba(87, 228, 198, 0.6)',
+                                borderWidth: 2,
+                                pointRadius: 0,
+                                data: [10, 5, 10, 5, 20, 10, 5, 35, 15, 25, 10, 15],
+                              },
+                              {
+                                label: 'Dataset 3',
+                                borderColor: 'rgba(255, 146, 139, 0.7)',
+                                backgroundColor: 'rgba(255, 146, 139, 0.6)',
+                                borderWidth: 2,
+                                pointRadius: 0,
+                                data: [20, 35, 35, 25, 75, 40, 85, 10, 45, 15, 25, 10],
+                              },
+                              {
+                                label: 'Dataset 2',
+                                borderColor: 'rgba(60, 145, 218, 0.7)',
+                                backgroundColor: 'rgba(60, 145, 218, 0.6)',
+                                borderWidth: 2,
+                                pointRadius: 0,
+                                data: [30, 80, 50, 60, 35, 10, 0, 5, 20, 40, 70, 40],
+                              }
+                            ]
+                          },
+                          options: {
+                            maintainAspectRatio: false,
+                            legend: {
+                              display: false
+                            },
+                            scales: {
+                              xAxes: [{
+                                gridLines: {
+                                  display: true,
+                                  color: 'rgb(240, 240, 240)',
+                                  drawBorder: false
+                                }
+                              }],
+                              yAxes: [{
+                                gridLines: {
+                                  display: true,
+                                  color: 'rgb(240, 240, 240)',
+                                  zeroLineColor: 'rgb(240, 240, 240)',
+                                  drawTicks: false
+                                },
+                                ticks: {
+                                  display: false
+                                }
+                              }]
+                            }
+                          }
+                        });
+                      </script>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 col-xl-2">
+                <div class="row">
+                  <div class="col col-lg-12">
+                    <div class="e-metric card mb-3">
+                      <div class="card-body">
+                        <div class="e-metric__main">
+                          <span class="e-metric__ico fa-stack"><i class="fa fa-circle fa-stack-2x text-light"></i><i class="fa fa-stack-1x fa-user"></i></span>
+                          <div class="e-metric__text px-2">
+                            <span class="e-metric__value h5 m-0">3,200</span>
+                            <div class="e-metric__title"><small class="text-muted">Users</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="e-metric card mb-3">
+                      <div class="card-body">
+                        <div class="e-metric__main">
+                          <span class="e-metric__ico fa-stack"><i class="fa fa-circle fa-stack-2x text-light"></i><i class="fa fa-stack-1x fa-tag"></i></span>
+                          <div class="e-metric__text px-2">
+                            <span class="e-metric__value h5 m-0">1,300</span>
+                            <div class="e-metric__title"><small class="text-muted">Tickets</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="e-metric card mb-3">
+                      <div class="card-body">
+                        <div class="e-metric__main">
+                          <span class="e-metric__ico fa-stack"><i class="fa fa-circle fa-stack-2x text-light"></i><i class="fa fa-stack-1x fa-usd"></i></span>
+                          <div class="e-metric__text px-2">
+                            <span class="e-metric__value h5 m-0">8,400</span>
+                            <div class="e-metric__title"><small class="text-muted">Income</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-sm-6 col-xl-4 mb-3">
+                <div class="e-panel card">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h6 class="mr-2"><span>Horizontal Bar</span><small class="px-1"></small></h6>
+                    </div>
+                    <div class="mt-3">
+                      <canvas id="horizontal-bar-dual-chart" height="223"></canvas>
+                      <script>
+                        new Chart(document.getElementById("horizontal-bar-dual-chart"), {
+                          type: 'horizontalBar',
+                          data: {
+                            labels: ['Vue', 'Angular', 'React', 'Ember'],
+                            datasets: [{
+                                label: 'One',
+                                backgroundColor: 'rgba(87, 228, 198, 0.8)',
+                                data: [35, 25, 40, 20]
+                              },
+                              {
+                                label: 'Two',
+                                backgroundColor: 'rgba(60, 145, 218, 0.7)',
+                                data: [40, 15, 35, 30]
+                              }
+                            ]
+                          },
+                          options: {
+                            maintainAspectRatio: false,
+                            legend: {
+                              display: false
+                            },
+                            scales: {
+                              xAxes: [{
+                                ticks: {
+                                  beginAtZero: true
+                                },
+                              }],
+                              yAxes: [{
+                                categoryPercentage: 0.6,
+                                barPercentage: 0.8,
+                              }]
+                            },
+                          }
+                        });
+                      </script>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-6 col-xl-4 mb-3">
+                <div class="e-panel card">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h6 class="mr-2"><span>Line Chart</span><small class="px-1"></small></h6>
+                    </div>
+                    <div class="mt-3">
+                      <canvas id="area-sharp-chart" height="223"></canvas>
+                      <script>
+                        new Chart(document.getElementById("area-sharp-chart"), {
+                          type: 'line',
+                          data: {
+                            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                            datasets: [{
+                              borderWidth: 1,
+                              borderColor: 'rgba(255, 146, 139, 0.8)',
+                              backgroundColor: 'rgba(255, 146, 139, 0.4)',
+                              pointBackgroundColor: 'rgba(255, 146, 139, 0.8)',
+                              radius: 0,
+                              data: [-60, 20, -40, 40, -20, 60],
+                              label: 'Dataset',
+                              fill: 'origin',
+                            }]
+                          },
+                          options: {
+                            maintainAspectRatio: false,
+                            legend: {
+                              display: false
+                            },
+                            maintainAspectRatio: false,
+                            spanGaps: false,
+                            elements: {
+                              line: {
+                                tension: 0.000001
+                              }
+                            },
+                            scales: {
+                              yAxes: [{
+                                ticks: {
+                                  min: -80,
+                                  max: 80,
+                                  stepSize: 40,
+                                  padding: 10,
+                                  display: false
+                                },
+                                gridLines: {
+                                  display: true,
+                                  color: 'rgba(0, 0, 0, 0.05)',
+                                  zeroLineColor: 'rgba(255, 146, 139, 0.8)',
+                                  drawTicks: false
+                                },
+                              }],
+                              xAxes: [{
+                                ticks: {
+                                  autoSkip: false
+                                },
+                                gridLines: {
+                                  display: true,
+                                  color: 'rgba(0, 0, 0, 0.05)'
+                                }
+                              }]
+                            }
+                          }
+                        });
+                      </script>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-sm-12 col-xl-4 mb-3">
+                <div class="e-panel card">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h6 class="mr-2"><span>Donut Chart</span><small class="px-1"></small></h6>
+                    </div>
+                    <div class="mt-3">
+                      <canvas id="donut-chart" height="223"></canvas>
+                      <script>
+                        new Chart(document.getElementById("donut-chart"), {
+                          type: 'doughnut',
+                          data: {
+                            labels: ['Mon', 'Tue', 'Wed'],
+                            datasets: [{
+                              label: 'Donut',
+                              backgroundColor: [
+                                'rgba(255, 146, 139, 0.8)',
+                                'rgba(87, 228, 198, 0.8)',
+                                'rgba(60, 145, 218, 0.7)'
+                              ],
+                              hoverBorderColor: '#fff',
+                              data: [5, 10, 8]
+                            }]
+                          },
+                          options: {
+                            maintainAspectRatio: false,
+                            legend: {
+                              position: 'bottom',
+                              labels: {
+                                usePointStyle: true,
+                                padding: 20
+                              }
+                            }
+                          }
+                        });
+                      </script>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <div class="e-panel card">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h6 class="mr-2">
+                        <span>New Users</span><small class="px-1">For the week</small>
+                      </h6>
+                      <small class="text-muted">1 - 3 of 32</small>
+                    </div>
+                    <div class="mt-3">
+                      <div class="e-table">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th class="text-center">#</th>
+                                <th class="max-width sortable">Name</th>
+                                <th class="sortable sortable--desc">Date</th>
+                                <th>Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center"><b>1</b></td>
+                                <td class="text-nowrap">Adam Cotter</td>
+                                <td class="text-nowrap"><span>09 Dec 2017</span></td>
+                                <td class="text-center"><span class="badge badge-light">true</span></td>
+                              </tr>
+                              <tr>
+                                <td class="text-center"><b>2</b></td>
+                                <td class="text-nowrap">Pauline Noble</td>
+                                <td class="text-nowrap"><span>26 Jan 2018</span></td>
+                                <td class="text-center"><span class="badge badge-secondary">false</span></td>
+                              </tr>
+                              <tr>
+                                <td class="text-center"><b>3</b></td>
+                                <td class="text-nowrap">Sherilyn Metzel</td>
+                                <td class="text-nowrap"><span>27 Jan 2018</span></td>
+                                <td class="text-center"><span class="badge badge-light">true</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <ul class="pagination mt-3 mb-0">
+                            <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+                            <li class="active page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link">›</a></li>
+                            <li class="page-item"><a href="#" class="page-link">»</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

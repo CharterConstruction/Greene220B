@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../lib/css/elements.theme.css">
+    <link rel="stylesheet" href="../../lib/components/elements.components.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" type="text/css">
+    <script src="../../vendor/jquery/jquery.slim.min.js"></script>
+    <script src="../../vendor/popper.js/popper.min.js"></script>
+    <script src="../../vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="../../vendor/Chart.js/Chart.min.js"></script>
+    <script src="../../vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="../../vendor/select2/js/select2.min.js"></script>
+    <script src="../../vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../../vendor/mohithg-switchery/switchery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-3">
+          <!-- Navbar - Default -->
+          <nav class="e-navbar navbar navbar-expand-md card mb-3">
+            <div class="e-navbar__cont flex-md-nowrap py-2">
+              <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#d-collapse">
+                <span class="fa fa-bars"></span>
+              </button>
+              <div class="navbar-brand d-none d-md-block">
+                <a class="e-logo mx-4" href="" onclick="return false">
+                  <span>Elements <small>stay simple</small></span>
+                </a>
+              </div>
+              <div class="e-navbar__title navbar-text d-md-none my-2">TITLE</div>
+              <div id="d-collapse" class="e-navbar__nav navbar-collapse order-4 order-md-2 collapse navbar-collapse">
+                <div class="d-md-flex">
+                  <ul class="navbar-nav mr-auto py-3 py-md-0 nav">
+                    <li class="nav-item">
+                      <a href="" onclick="return false" class="active nav-link">Overview</a>
+                    </li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link">Bootstrap</a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link">Pages</a></li>
+                  </ul>
+                  <form class="form-inline d-md-none d-lg-flex">
+                    <div class="input-with-ico">
+                      <i class="input-ico fa fa-fw fa-search"></i>
+                      <input class="form-control form-control-rounded" type="search" placeholder="Search">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="e-navbar__actions ml-3">
+                <ul class="navbar-nav flex-nowrap flex-row">
+                  <li class="nav-item d-none d-md-inline-block">
+                    <a class="nav-link" href="" onclick="return false">
+                      <i class="fa fa-bell"></i>
+                    </a>
+                  </li>
+                  <li class="dropdown nav-item">
+                    <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                      <span class="d-none d-md-inline">Morty Smith</span>
+                      <span class="d-md-none fa fa-user-circle"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item d-md-none" href="">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span>Alerts</span>
+                          <span class="badge badge-danger">3</span>
+                        </div>
+                      </a>
+                      <a class="dropdown-item" href="" onclick="return false">Profile</a>
+                      <a class="dropdown-item" href="" onclick="return false">Settings</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="" onclick="return false">Logout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Navbar - Nav in Center -->
+          <nav class="e-navbar navbar navbar-expand-md card e-navbar--nav-in-center mb-3">
+            <div class="e-navbar__cont flex-md-nowrap py-2">
+              <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#nic-collapse">
+                <span class="fa fa-bars"></span>
+              </button>
+              <div class="navbar-brand d-none d-md-block">
+                <a class="e-logo mx-4" href="" onclick="return false">
+                  <span>Elements <small>stay simple</small></span>
+                </a>
+              </div>
+              <div class="e-navbar__title navbar-text d-md-none my-2">TITLE</div>
+              <div id="nic-collapse" class="e-navbar__nav navbar-collapse order-4 order-md-2 collapse navbar-collapse">
+                <div class="d-md-flex">
+                  <ul class="navbar-nav mr-auto py-3 py-md-0 nav">
+                    <li class="nav-item"><a href="" onclick="return false" class="active nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link">Bootstrap</a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link">Pages</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="e-navbar__actions ml-3">
+                <button class="btn btn-success" type="button">
+                  <i class="fa fa-user-circle"></i>
+                  <span class="d-none d-md-inline-block">Morty Smith</span>
+                </button>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Navbar - Brand in Center -->
+          <nav class="e-navbar navbar navbar-expand-md card e-navbar--brand-in-center mb-3">
+            <div class="e-navbar__cont flex-md-nowrap py-2">
+              <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#bic-collapse">
+                <span class="fa fa-bars"></span>
+              </button>
+              <div class="navbar-brand d-none d-md-block">
+                <a class="e-logo mx-4 my-2" href="" onclick="return false">
+                  <span>Elements <small>stay simple</small></span>
+                </a>
+              </div>
+              <div class="e-navbar__title navbar-text d-md-none my-2">TITLE</div>
+              <div id="bic-collapse" class="e-navbar__nav navbar-collapse order-4 order-md-2 collapse navbar-collapse">
+                <div class="d-md-flex">
+                  <ul class="navbar-nav mr-auto py-3 py-md-0 nav">
+                    <li class="nav-item"><a href="" onclick="return false" class="active nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link">Bootstrap</a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link">Pages</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="e-navbar__actions ml-3">
+                <form class="form-inline">
+                  <div class="input-with-ico">
+                    <i class="input-ico fa fa-fw fa-search"></i>
+                    <input class="form-control form-control-rounded" type="search" placeholder="Search" style="max-width: 170px;">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 mb-3">
+          <div class="d-flex justify-content-between">
+            <div style="flex-grow: 1;">
+              <!-- Navlist - Active Backgroung-->
+              <div class="card p-3">
+                <div class="e-navlist e-navlist--active-bg">
+                  <ul class="nav">
+                    <li class="nav-item"><a href="" onclick="return false" class="active nav-link"><i class="fa fa-fw fa-home mr-1"></i><span>Home</span></a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link"><i class="fa fa-fw fa-bookmark mr-1"></i><span>Bookmarks</span></a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link"><i class="fa fa-fw fa-envelope mr-1"></i><span>Messages</span><span class="badge badge-light ml-1">4</span></a></li>
+                    <li class="nav-item"><a href="" onclick="return false" class="nav-link"><i class="fa fa-fw fa-cog mr-1"></i><span>Settings</span></a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="ml-3">
+              <!-- Navlist with Tooltips-->
+              <div class="card py-3 px-2">
+                <div id="e-nav-list--tooltips" class="e-navlist e-navlist--active-bg">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="" onclick="return false" class="active nav-link" data-toggle="tooltip" data-placement="right" title="Home"><i class="fa fa-fw fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" onclick="return false" class="nav-link" data-toggle="tooltip" data-placement="right" title="Bookmarks"><i class="fa fa-fw fa-bookmark"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" onclick="return false" class="nav-link" data-toggle="tooltip" data-placement="right" title="Messages"><i class="fa fa-fw fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" onclick="return false" class="nav-link" data-toggle="tooltip" data-placement="right" title="Settings"><i class="fa fa-fw fa-cog"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <script type="text/javascript">
+                $(function() {
+                  $('#e-nav-list--tooltips [data-toggle="tooltip"]').tooltip({
+                    delay: 0
+                  })
+                })
+              </script>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-7 col-lg-3 col-xl-2 mb-3">
+          <!-- Navlist - Active Bold-->
+          <div class="card p-3">
+            <div class="e-navlist e-navlist--active-bold">
+              <ul class="nav">
+                <li class="nav-item"><a href="" onclick="return false" class="active nav-link">Home</a></li>
+                <li class="nav-item"><a href="" onclick="return false" class="nav-link">Bookmarks</a></li>
+                <li class="nav-item"><a href="" onclick="return false" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="" onclick="return false" class="nav-link">Settings</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 col-xl-7 mb-3">
+          <div class="mb-3">
+            <!-- Tabs - Nested-->
+            <div class="card px-3">
+              <div class="e-tabs e-tabs--nested">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item"><a href="#nested-home" data-toggle="tab" class="active nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#nested-bookmarks" data-toggle="tab" class="nav-link">Bookmarks</a></li>
+                  <li class="nav-item"><a href="#nested-messages" data-toggle="tab" class="nav-link">Messages</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="nested-home">
+                    <ul class="nav">
+                      <li class="nav-item"><a href="" class="nav-link"><span>My Profile</span></a></li>
+                      <li class="nav-item"><a href="" class="nav-link"><span>Friends</span></a></li>
+                      <li class="nav-item"><a href="" class="nav-link"><span>News</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="nested-bookmarks">
+                    <ul class="nav">
+                      <li class="nav-item"><a href="" class="nav-link"><span>Posts</span></a></li>
+                      <li class="nav-item"><a href="" class="nav-link"><span>People</span></a></li>
+                      <li class="nav-item"><a href="" class="nav-link"><span>Documents</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="nested-messages">
+                    <ul class="nav">
+                      <li class="nav-item"><a href="" class="nav-link"><span>Inbox</span><span class="badge badge-light ml-1">2</span></a></li>
+                      <li class="nav-item"><a href="" class="nav-link"><span>Sent</span></a></li>
+                      <li class="nav-item"><a href="" class="nav-link"><span>Drafts</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Navline - Arrow-->
+          <div class="card px-2">
+            <div class="e-navline e-navline--arrow">
+              <ul class="nav">
+                <li class="nav-item"><a href="" onclick="return false" class="active nav-link">Home</a></li>
+                <li class="nav-item"><a href="" onclick="return false" class="nav-link">Bookmarks</a></li>
+                <li class="nav-item"><a href="" onclick="return false" class="nav-link">Messages</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-4 col-xl-5 mb-3">
+          <div class="mb-3" style="padding-bottom: 2px">
+            <!-- Tabs - Default -->
+            <div class="card">
+              <div class="card-body pt-2">
+                <div class="e-tabs">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="#tabs-d-home" data-toggle="tab" class="active nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#tabs-d-settings" data-toggle="tab" class="nav-link">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#tabs-d-inbox" data-toggle="tab" class="nav-link">Inbox <span class="badge badge-light ml-1">2</span></a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="tabs-d-home" class="tab-pane active"></div>
+                    <div id="tabs-d-settings" class="tab-pane"></div>
+                    <div id="tabs-d-inbox" class="tab-pane"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Table - Basic -->
+          <div class="e-panel card">
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="mr-2">
+                  <span>New Users</span><small class="px-1">For the week</small>
+                </h6>
+                <small class="text-muted">1 - 3 of 32</small>
+              </div>
+              <div class="mt-3">
+                <div class="e-table">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th class="text-center">#</th>
+                          <th class="max-width sortable">Name</th>
+                          <th class="sortable sortable--desc">Date</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center"><b>1</b></td>
+                          <td class="text-nowrap">Adam Cotter</td>
+                          <td class="text-nowrap"><span>09 Dec 2017</span></td>
+                          <td class="text-center"><span class="badge badge-light">true</span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><b>2</b></td>
+                          <td class="text-nowrap">Pauline Noble</td>
+                          <td class="text-nowrap"><span>26 Jan 2018</span></td>
+                          <td class="text-center"><span class="badge badge-secondary">false</span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><b>3</b></td>
+                          <td class="text-nowrap">Sherilyn Metzel</td>
+                          <td class="text-nowrap"><span>27 Jan 2018</span></td>
+                          <td class="text-center"><span class="badge badge-light">true</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pagination mt-3 mb-0">
+                      <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+                      <li class="active page-item"><a href="#" class="page-link">1</a></li>
+                      <li class="page-item"><a href="#" class="page-link">2</a></li>
+                      <li class="page-item"><a href="#" class="page-link">3</a></li>
+                      <li class="page-item"><a href="#" class="page-link">4</a></li>
+                      <li class="page-item"><a href="#" class="page-link">5</a></li>
+                      <li class="page-item"><a href="#" class="page-link">›</a></li>
+                      <li class="page-item"><a href="#" class="page-link">»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-12 col-lg-8 col-xl-7 mb-3">
+          <!-- Table - Advanced -->
+          <style>
+            .e-advanced-table .bookmark {
+    cursor: pointer;
+    color: #e9ecef;
+  }
+
+  .e-advanced-table .bookmark:hover,
+  .e-advanced-table .bookmark.active {
+    color: #adb5bd;
+  }
+</style>
+          <div class="card">
+            <div class="card-body">
+              <div class="e-advanced-table">
+                <div class="d-flex mb-3">
+                  <div class="mr-3" style="flex-grow: 1">
+                    <form class="form-inline">
+                      <div class="input-with-ico w-100">
+                        <i class="input-ico fa fa-fw fa-search"></i>
+                        <div class="input-group flex-nowrap w-100">
+                          <input class="form-control w-100" type="search" placeholder="Search" value="">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div>
+                    <div class="btn-group">
+                      <button class="btn btn-success">
+                        <i class="fa fa-plus"></i>
+                        <span class="d-none d-md-inline-block ml-1">Create</span>
+                      </button>
+                      <button type="button" class="dropdown-toggle btn btn-success" data-toggle="dropdown"></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <h6 class="dropdown-header">With selected:</h6>
+                        <button type="button" class="dropdown-item">Remove</button>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Toggle:</h6>
+                        <button type="button" class="dropdown-item">Status</button>
+                        <button type="button" class="dropdown-item">Bookmark</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row flex-lg-nowrap">
+                  <div class="col">
+                    <div class="e-navlist e-navlist--active-bold">
+                      <ul class="nav">
+                        <li class="nav-item active"><a href="" class="nav-link"><span>All</span>&nbsp;<small>/&nbsp;32</small></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><span>Bookmarks</span>&nbsp;<small>/&nbsp;16</small></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><span>Selected</span>&nbsp;<small>/&nbsp;2</small></a></li>
+                      </ul>
+                    </div>
+                    <hr class="mb-3">
+                    <div class="px-2">
+                      <div class="custom-control custom-checkbox m-0">
+                        <input type="checkbox" class="custom-control-input" id="at-actives-check">
+                        <label class="custom-control-label" for="at-actives-check">Actives Only</label>
+                      </div>
+                    </div>
+                    <hr class="my-3 d-md-none">
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <div class="e-table">
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th class="align-top">
+                                <div class="custom-control custom-control-inline custom-control-nameless custom-checkbox m-0">
+                                  <input type="checkbox" class="custom-control-input" id="at-all-items">
+                                  <label class="custom-control-label" for="at-all-items"></label>
+                                </div>
+                              </th>
+                              <th class="max-width">Name</th>
+                              <th class="sortable sortable--desc">Date</th>
+                              <th>Status</th>
+                              <th> </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0">
+                                  <input type="checkbox" class="custom-control-input" id="at-item-1">
+                                  <label class="custom-control-label" for="at-item-1"></label>
+                                </div>
+                              </td>
+                              <td class="text-nowrap">Adam Cotter</td>
+                              <td class="text-nowrap"><span>09 Dec 2017</span></td>
+                              <td class="text-center"><span class="badge badge-light">true</span></td>
+                              <td class="text-center"><span class="bookmark"><i class="fa fa-bookmark fa-fw"></i></span></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0">
+                                  <input type="checkbox" class="custom-control-input" id="at-item-2" checked="">
+                                  <label class="custom-control-label" for="at-item-2"></label>
+                                </div>
+                              </td>
+                              <td class="text-nowrap">Pauline Noble</td>
+                              <td class="text-nowrap"><span>26 Jan 2018</span></td>
+                              <td class="text-center"><span class="badge badge-secondary">false</span></td>
+                              <td class="text-center"><span class="bookmark active"><i class="fa fa-bookmark fa-fw"></i></span></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0">
+                                  <input type="checkbox" class="custom-control-input" id="at-item-3" checked="">
+                                  <label class="custom-control-label" for="at-item-3"></label>
+                                </div>
+                              </td>
+                              <td class="text-nowrap">Sherilyn Metzel</td>
+                              <td class="text-nowrap"><span>27 Jan 2018</span></td>
+                              <td class="text-center"><span class="badge badge-light">true</span></td>
+                              <td class="text-center"><span class="bookmark"><i class="fa fa-bookmark fa-fw"></i></span></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0">
+                                  <input type="checkbox" class="custom-control-input" id="at-item-4">
+                                  <label class="custom-control-label" for="at-item-4"></label>
+                                </div>
+                              </td>
+                              <td class="text-nowrap">Terrie Boaler</td>
+                              <td class="text-nowrap"><span>20 Jan 2018</span></td>
+                              <td class="text-center"><span class="badge badge-light">true</span></td>
+                              <td class="text-center"><span class="bookmark"><i class="fa fa-bookmark fa-fw"></i></span></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0">
+                                  <input type="checkbox" class="custom-control-input" id="at-item-5">
+                                  <label class="custom-control-label" for="at-item-5"></label>
+                                </div>
+                              </td>
+                              <td class="text-nowrap">Rutter Pude</td>
+                              <td class="text-nowrap"><span>13 Jan 2018</span></td>
+                              <td class="text-center"><span class="badge badge-secondary">false</span></td>
+                              <td class="text-center"><span class="bookmark active"><i class="fa fa-bookmark fa-fw"></i></span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <ul class="pagination mt-3 mb-0">
+                          <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+                          <li class="active page-item"><a href="#" class="page-link">1</a></li>
+                          <li class="page-item"><a href="#" class="page-link">2</a></li>
+                          <li class="page-item"><a href="#" class="page-link">3</a></li>
+                          <li class="page-item"><a href="#" class="page-link">4</a></li>
+                          <li class="page-item"><a href="#" class="page-link">5</a></li>
+                          <li class="page-item"><a href="#" class="page-link">›</a></li>
+                          <li class="page-item"><a href="#" class="page-link">»</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="row">
+            <div class="col">
+              <!-- Metric - Users -->
+              <div class="e-metric card mb-3">
+                <div class="card-body">
+                  <div class="e-metric__main">
+                    <span class="e-metric__ico fa-stack">
+        <i class="fa fa-circle fa-stack-2x text-light"></i>
+        <i class="fa fa-stack-1x fa-user"></i>
+      </span>
+                    <div class="e-metric__text px-2">
+                      <span class="e-metric__value h5 m-0">3,200</span>
+                      <div class="e-metric__title"><small class="text-muted">Users</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col">
+              <!-- Metric - Tickets -->
+              <div class="e-metric card mb-3">
+                <div class="card-body">
+                  <div class="e-metric__main">
+                    <span class="e-metric__ico fa-stack">
+        <i class="fa fa-circle fa-stack-2x text-light"></i>
+        <i class="fa fa-stack-1x fa-tag"></i>
+      </span>
+                    <div class="e-metric__text px-2">
+                      <span class="e-metric__value h5 m-0">1,300</span>
+                      <div class="e-metric__title"><small class="text-muted">Tickets</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col d-none d-lg-block">
+              <!-- Metric - Income -->
+              <div class="e-metric card mb-3">
+                <div class="card-body">
+                  <div class="e-metric__main">
+                    <span class="e-metric__ico fa-stack">
+        <i class="fa fa-circle fa-stack-2x text-light"></i>
+        <i class="fa fa-stack-1x fa-usd"></i>
+      </span>
+                    <div class="e-metric__text px-2">
+                      <span class="e-metric__value h5 m-0">8,400</span>
+                      <div class="e-metric__title"><small class="text-muted">Income</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-sm-6 col-lg-12 col-xl-6 mb-3">
+              <!-- Metric - Income Trend -->
+              <div class="e-metric card">
+                <div class="card-body">
+                  <div class="e-metric__main">
+                    <span class="e-metric__ico fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-stack-1x fa-usd fa-inverse"></i>
+      </span>
+                    <div class="e-metric__text px-2">
+                      <span class="e-metric__value h5 m-0">$4,280</span>
+                      <div class="e-metric__title"><small class="text-muted">Income</small></div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary active">Day</button>
+                      <button class="btn btn-sm btn-outline-secondary">Week</button>
+                      <button class="btn btn-sm btn-outline-secondary">Month</button>
+                    </div>
+                  </div>
+                  <div class="mt-3 position-relative">
+                    <canvas id="income-trend-chart" height="51"></canvas>
+                  </div>
+                </div>
+              </div>
+              <script>
+                new Chart(document.getElementById("income-trend-chart"), {
+  type: 'line',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    datasets: [
+      {
+        label: "Income Trend",
+        backgroundColor: '#f5f6f8',
+        borderColor: '#686e71',
+        data: [
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+        ],
+        fill: 'start',
+      }
+    ],
+  },
+  options: {
+    maintainAspectRatio: false,
+    elements: {
+      arc: {
+        borderWidth: 3
+      }
+    },
+    legend: { display: false },
+    tooltips: { enabled: false },
+    layout: {
+      padding: {
+        left: 10,
+        right: 10
+      }
+    },
+    scales: {
+      xAxes: [
+        { display: false }
+      ],
+      yAxes: [
+        { display: false }
+      ]
+    }
+  }
+});
+</script>
+
+            </div>
+            <div class="col col-sm-6 col-lg-12 col-xl-6 mb-3">
+              <!-- Metric - Outcome Trend -->
+              <div class="e-metric card">
+                <div class="card-body">
+                  <div class="e-metric__main">
+                    <span class="e-metric__ico fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-stack-1x fa-usd fa-inverse"></i>
+      </span>
+                    <div class="e-metric__text px-2">
+                      <span class="e-metric__value h5 m-0">$2,213</span>
+                      <div class="e-metric__title"><small class="text-muted">Outcome</small></div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-outline-secondary active">Day</button>
+                      <button class="btn btn-sm btn-outline-secondary">Week</button>
+                      <button class="btn btn-sm btn-outline-secondary">Month</button>
+                    </div>
+                  </div>
+                  <div class="mt-3 position-relative">
+                    <canvas id="outcome-trend-chart" height="51"></canvas>
+                  </div>
+                </div>
+              </div>
+              <script>
+                new Chart(document.getElementById("outcome-trend-chart"), {
+  type: 'bar',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    datasets: [
+      {
+        label: "Outcome Trend",
+        backgroundColor: '#686e71',
+        data: [
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+          Math.round(Math.random() * 10000),
+        ],
+      }
+    ],
+  },
+  options: {
+    maintainAspectRatio: false,
+    elements: {
+      arc: {
+        borderWidth: 3
+      }
+    },
+    legend: { display: false },
+    tooltips: { enabled: false },
+    layout: {
+      padding: {
+        left: 10,
+        right: 10
+      }
+    },
+    scales: {
+      xAxes: [
+        {
+          display: false,
+          categoryPercentage: 0.8,
+          barPercentage: 0.6,
+        }
+      ],
+      yAxes: [
+        { display: false }
+      ]
+    }
+  }
+});
+</script>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-3">
+              <div class="e-panel card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6 class="mr-2"><span>Donut Chart</span></h6>
+                  </div>
+                  <div>
+                    <!-- Chart - Doughnut -->
+                    <canvas id="donut-chart" height="223"></canvas>
+                    <script>
+                      new Chart(document.getElementById("donut-chart"), {
+  type: 'doughnut',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed'],
+    datasets: [
+      {
+        label: 'Donut',
+        backgroundColor: [
+          'rgba(255, 146, 139, 0.8)',
+          'rgba(87, 228, 198, 0.8)',
+          'rgba(60, 145, 218, 0.7)'
+        ],
+        hoverBorderColor: '#fff',
+        data: [5, 10, 8]
+      }
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    legend: {
+      position: 'bottom',
+      labels: {
+        usePointStyle: true,
+        padding: 20
+      }
+    }
+  }
+});
+</script>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-3">
+              <div class="e-panel card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6 class="mr-2"><span>Horizontal Bar</span></h6>
+                  </div>
+                  <div>
+                    <!-- Chart - HorizonatlBarDual -->
+                    <canvas id="horizontal-bar-dual-chart" height="223"></canvas>
+                    <script>
+                      new Chart(document.getElementById("horizontal-bar-dual-chart"), {
+  type: 'horizontalBar',
+  data: {
+    labels: ['Vue', 'Angular', 'React', 'Ember'],
+    datasets: [
+      {
+        label: 'One',
+        backgroundColor: 'rgba(87, 228, 198, 0.8)',
+        data: [35, 25, 40, 20]
+      },
+      {
+        label: 'Two',
+        backgroundColor: 'rgba(60, 145, 218, 0.7)',
+        data: [40, 15, 35, 30]
+      }
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [
+        {
+          ticks: {
+            beginAtZero: true
+          },
+        }
+      ],
+      yAxes: [
+        {
+          categoryPercentage: 0.6,
+          barPercentage: 0.8,
+        }
+      ]
+    },
+  }
+});
+</script>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <div class="e-panel card">
+            <div class="card-body">
+              <div class="h6 font-weight-bold text-center mb-3">Area Chart</div>
+              <div class="row">
+                <div class="col-12 col-lg-10">
+                  <div>
+                    <!-- Chart - AreaTriple -->
+                    <canvas id="area-triple-chart" height="190"></canvas>
+                    <script>
+                      new Chart(document.getElementById("area-triple-chart"), {
+  type: 'line',
+  data: {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    datasets: [
+      {
+        label: 'Dataset 1',
+        borderColor: 'rgba(87, 228, 198, 0.7)',
+        backgroundColor: 'rgba(87, 228, 198, 0.6)',
+        borderWidth: 2,
+        pointRadius: 0,
+        data: [10, 5, 10, 5, 20, 10, 5, 35, 15, 25, 10, 15],
+      },
+      {
+        label: 'Dataset 3',
+        borderColor: 'rgba(255, 146, 139, 0.7)',
+        backgroundColor: 'rgba(255, 146, 139, 0.6)',
+        borderWidth: 2,
+        pointRadius: 0,
+        data: [20, 35, 35, 25, 75, 40, 85, 10, 45, 15, 25, 10],
+      },
+      {
+        label: 'Dataset 2',
+        borderColor: 'rgba(60, 145, 218, 0.7)',
+        backgroundColor: 'rgba(60, 145, 218, 0.6)',
+        borderWidth: 2,
+        pointRadius: 0,
+        data: [30, 80, 50, 60, 35, 10, 0, 5, 20, 40, 70, 40],
+      }
+    ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: true,
+            color: 'rgb(240, 240, 240)',
+            drawBorder: false
+          }
+        }
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            display: true,
+            color: 'rgb(240, 240, 240)',
+            zeroLineColor: 'rgb(240, 240, 240)',
+            drawTicks: false
+          },
+          ticks: {
+            display: false
+          }
+        }
+      ]
+    }
+  }
+});
+</script>
+
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                  <div class="h-100 d-flex flex-row flex-wrap justify-content-center flex-lg-column pt-3 pt-lg-0">
+                    <div class="px-3 py-1 py-md-0 text-center">
+                      <div class="h4 m-0">$1,200</div>
+                      <div class="text-muted"><small>Income</small></div>
+                    </div>
+                    <hr class="w-100 d-none d-lg-block">
+                    <div class="px-3 py-1 py-md-0 text-center">
+                      <div class="h4 m-0">$3,800</div>
+                      <div class="text-muted"><small>Outcome</small></div>
+                    </div>
+                    <hr class="w-100 d-none d-lg-block">
+                    <div class="px-3 py-1 py-md-0 text-center">
+                      <div class="h4 m-0">$5,000</div>
+                      <div class="text-muted"><small>Turnover</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 col-xl-3 mb-3">
+          <!-- Panel - LoginForm -->
+          <div class="e-panel card">
+            <div class="card-body">
+              <div class="card-title">
+                <div class="h6 text-center w-100 mb-2">Sign In / Login</div>
+              </div>
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group d-flex justify-content-between align-items-center">
+                  <a href="" class="text-muted btn btn-link">Need Help?</a>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="form-group text-center m-0">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa fa-fw fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa fa-fw fa-facebook"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa fa-fw fa-github"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-xl-3 mb-3">
+          <!-- Datepicker - Inline -->
+          <div class="card">
+            <input id="calendar" type="text" style="display: none" />
+          </div>
+          <script>
+            $("#calendar").flatpickr({
+  inline: true ,
+  locale: Object.assign({}, flatpickr.l10ns.default, {
+    weekdays: {
+      shorthand: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
+    rangeSeparator: " - "
+  }),
+  disableMobile: true
+});
+</script>
+
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 col-xl-6 mb-3">
+          <div class="e-panel card">
+            <div class="card-body">
+              <div class="card-title">
+                <h6 class="mr-2"><span>Form Controls</span><small class="px-1">Custom Plugins</small></h6>
+              </div>
+              <form class="mt-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-prepend">
+                          <span class="input-group-text flex-column">
+                            <div class="fa-fw position-relative" style="background-color: inherit; flex: 1 1 0%;">
+                              <i class="fa fa-fw fa-calendar-o position-absolute" style="left: -17%; top: 0px;"></i>
+                              <i class="fa fa-fw fa-clock-o position-absolute" style="left: 17%; bottom: 0px; background-color: inherit;"></i>
+                            </div>
+                          </span>
+                        </span>
+                        <!-- Datepicker - Datetime -->
+                        <input id="flatpickr-datetime" class="form-control" placeholder="Datetime" type="text">
+                        <script>
+                          $("#flatpickr-datetime").flatpickr({
+  dateFormat: 'j M Y H:i',
+  enableTime: true,
+  time_24hr: true,
+  locale: Object.assign({}, flatpickr.l10ns.default, {
+    weekdays: {
+      shorthand: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
+    rangeSeparator: " - "
+  }),
+  disableMobile: true
+});
+</script>
+
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-prepend">
+                          <span class="input-group-text flex-column">
+                            <div class="fa-fw position-relative" style="background-color: inherit; flex: 1 1 0%;">
+                              <i class="fa fa-fw fa-calendar-o position-absolute" style="left: -17%; top: 0px;"></i>
+                              <i class="fa fa-fw fa-calendar position-absolute" style="left: 17%; bottom: 0px; background-color: inherit;"></i>
+                            </div>
+                          </span>
+                        </span>
+                        <!-- Datepicker - Range -->
+                        <input id="flatpickr-range" class="form-control" placeholder="Range" type="text">
+                        <script>
+                          $("#flatpickr-range").flatpickr({
+  mode: 'range',
+  dateFormat: 'd M y',
+  locale: Object.assign({}, flatpickr.l10ns.default, {
+    weekdays: {
+      shorthand: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
+    rangeSeparator: " - "
+  }),
+  disableMobile: true
+});
+</script>
+
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-prepend">
+                          <span class="input-group-text"><i class="fa fa-fw fa-clock-o"></i></span>
+                        </span>
+                        <!-- Datepicker - Time -->
+                        <input id="flatpickr-time" class="form-control" placeholder="Time" type="text">
+                        <script>
+                          $("#flatpickr-time").flatpickr({
+  enableTime: true,
+  noCalendar: true,
+  time_24hr: true,
+  locale: Object.assign({}, flatpickr.l10ns.default, {
+    weekdays: {
+      shorthand: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
+    rangeSeparator: " - "
+  }),
+  disableMobile: true
+});
+</script>
+
+                      </div>
+                    </div>
+                    <div class="form-group mb-md-0">
+                      <!-- Datepicker - Addons -->
+                      <div class="input-group" id="flatpickr-addons">
+                        <span class="input-group-prepend">
+    <span class="input-group-text"><i class="fa fa-fw fa-calendar"></i></span>
+                        </span>
+                        <input class="form-control" placeholder="Addons" type="text" data-input>
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" data-clear>
+                            <i class="fa fa-close"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <script>
+                        $("#flatpickr-addons").flatpickr({
+  wrap: true,
+  locale: Object.assign({}, flatpickr.l10ns.default, {
+    weekdays: {
+      shorthand: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
+    rangeSeparator: " - "
+  }),
+  disableMobile: true
+});
+</script>
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <!-- Select - Single -->
+                      <select id="select2-single" class="d-none">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <script>
+                        $('#select2-single').select2({ placeholder: 'Single' });
+</script>
+
+                    </div>
+                    <div class="form-group">
+                      <!-- Select - Multiple -->
+                      <select id="select2-multiple" class="d-none" multiple placeholder="Tags">
+                        <option value="1" selected>One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                      </select>
+                      <script>
+                        $('#select2-multiple').select2({ placeholder: 'Tags' });
+</script>
+
+                    </div>
+                    <div class="form-group mb-0">
+                      <div class="pt-1 pb-2 mb-2">
+                        <div class="mb-1">
+                          <!-- Select - Single -->
+                          <input type="text" id="ion-slider-single" />
+                          <script>
+                            $("#ion-slider-single").ionRangeSlider({ from: 50 });
+</script>
+
+                        </div>
+                        <!-- Select - Single -->
+                        <input type="text" id="ion-slider-double" />
+                        <script>
+                          $("#ion-slider-double").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 100,
+    from: 25,
+    to: 75,
+  });
+</script>
+
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <div class="mr-1">
+                          <!-- Toggle - On -->
+                          <input id="toggle-on" type="checkbox" checked />
+                          <script>
+                            new Switchery(document.getElementById('toggle-on'), {
+    size: 'small',
+    color: 'rgb(89, 205, 144)',
+    secondaryColor: 'rgb(173, 181, 189)',
+    jackColor: '#ffffff',
+  })
+</script>
+
+                        </div>
+                        <div class="mr-1">
+                          <!-- Toggle - Off -->
+                          <input id="toggle-off" type="checkbox" />
+                          <script>
+                            new Switchery(document.getElementById('toggle-off'), {
+                              size: 'small',
+                              color: 'rgb(89, 205, 144)',
+                              secondaryColor: 'rgb(173, 181, 189)',
+                              jackColor: '#ffffff',
+                            })
+                          </script>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
