@@ -3,14 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using ITPM.App.Projects;
+
 
 namespace ITPM.App
 {
+    using System.Linq;
+    using ITPM.App.Projects;
+    using ITPM.App.Statuses;
+
     class MainWindowViewModel : BindableBase
     {
 
-        
+
+        private static ITPM.Repository.Projects.ProjectRepository _projectRepository = new ITPM.Repository.Projects.ProjectRepository();
+        private static ITPM.Repository.Statuses.StatusRepository _statusRepository = new ITPM.Repository.Statuses.StatusRepository();
+        private readonly Status _defaultProjectStatus = _statusRepository.GetAll().Where(t => t.StatusName == "New Idea").Select(t => t.ToUIModel()).FirstOrDefault();
+
+
         private BindableBase _CurrentListViewModel;
         private BindableBase _CurrentDetailViewModel;
 
@@ -20,12 +29,26 @@ namespace ITPM.App
 
         public MainWindowViewModel()
         {
+            
+            
+            // Requestable commands
             NavCommand = new RelayCommand<string>(OnNav);
+            //ReloadProjectsCommand = new RelayCommand(OnReloadProjectsRequested);
 
-            //Subscribe to child view model events to know when to update UI
-            _projectListViewModel.AddProjectRequested += SetSelectedProject;
-            _projectListViewModel.EditProjectRequested += SetSelectedProject;
-            _projectListViewModel.DeleteProjectRequested += SetSelectedProject;            
+
+            // ProjectListViewModel ACTION subscriptions - when these events occur, do things here.
+            _projectListViewModel.AddProjectRequested += SetCurrentProject;
+            _projectListViewModel.SelectProjectRequested += SetCurrentProject;
+            _addEditProjectViewModel.SaveProjectRequested += SetCurrentProject;
+
+            
+            
+            //_addEditProjectViewModel.LoadProjectsRequested += OnReloadProjectsRequested;
+
+            //to do... listen for delete and reload...?
+
+
+
 
             CurrentListViewModel = _projectListViewModel;
 
@@ -48,13 +71,17 @@ namespace ITPM.App
         }
 
 
-
-        private void SetSelectedProject(Project project)
+        private void ReloadProjects()
         {
-            //    _addEditProjectViewModel.SelectedProject = project;
+            _projectListViewModel.OnLoadProjects();
+        }
 
 
-            _addEditProjectViewModel.SetProject(project);
+
+        private void SetCurrentProject(Project project)
+        {
+            _addEditProjectViewModel.OnSelectProject(project);               
+                
             CurrentDetailViewModel = _addEditProjectViewModel;
         }
 
@@ -77,8 +104,15 @@ namespace ITPM.App
         }
 
 
+        /*
+        public RelayCommand ReloadProjectsCommand { get; private set; }
+        public event Action ReloadProjectsRequested = delegate { };
 
-
+        private void OnReloadProjectsRequested()
+        {
+            ReloadProjectsRequested();
+            //_projectListViewModel.LoadProjects();
+        }*/
 
     }
 }

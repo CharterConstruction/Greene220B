@@ -30,7 +30,7 @@ namespace ITPM.Repository.Statuses
             return Query().ToList();
         }
 
-        public bool Remove(Status inputObject)
+        public bool Remove(int id)
         {
             throw new System.NotImplementedException();
         }

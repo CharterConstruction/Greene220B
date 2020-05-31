@@ -53,7 +53,10 @@ namespace ITPM.App.Projects
             set { SetProperty(ref _status, value); }
         }
 
-
+        public Project Clone()
+        {
+            return (Project)MemberwiseClone();
+        }
     }
 
 

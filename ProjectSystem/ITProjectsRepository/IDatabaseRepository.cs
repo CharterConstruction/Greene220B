@@ -9,7 +9,7 @@ namespace ITPM.Repository
 
         T Add(T inputObject);
 
-        bool Remove(T inputObject);
+        bool Remove(int id);
 
         bool Update(T inputObject);
 

@@ -9,25 +9,51 @@
              d:DesignHeight="450" d:DesignWidth="300">
     <b:Interaction.Triggers>
         <b:EventTrigger EventName="Loaded">
-            <b:CallMethodAction TargetObject="{Binding}" MethodName="Load"/>
+            <b:CallMethodAction TargetObject="{Binding}" MethodName="OnLoadProjects"/>
         </b:EventTrigger>
     </b:Interaction.Triggers>
 
-    <Grid>
-        <StackPanel>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
 
-            <TextBlock Text="Search for a Project"  
-                       Height="25" 
-                       Width="250"
+        <StackPanel 
+            Grid.Row="0" 
+            Orientation="Vertical"
+            HorizontalAlignment="Center"
+            >
+            <TextBlock Text="Search for a Project"
+                       FontSize="16"
                        Margin="5" 
-                       HorizontalAlignment="Left" 
                        />
-            <TextBox Text="{Binding SearchString, UpdateSourceTrigger=PropertyChanged}"                      
-                     Height="25" 
-                     Width="250"
-                     Margin="5" 
-                     HorizontalAlignment="Left" 
-                     /> 
+            <TextBox 
+                Text="{Binding SearchString, UpdateSourceTrigger=PropertyChanged}"                      
+                MinWidth="200" MaxWidth="250"                    
+                Height="25"
+                Margin="5" 
+                />
+
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">               
+                <Button Content="Add Project"
+                        MinWidth="100" MaxWidth="200"                    
+                        MinHeight="20" MaxHeight="30"
+                        Margin="5" 
+                        Command="{Binding AddProjectCommand}"/>
+
+            <Button Content="Reload Projects"
+                        MinWidth="100" MaxWidth="200"                    
+                        MinHeight="20" MaxHeight="30"
+                        Margin="5" 
+                        Command="{Binding LoadProjectsCommand}"/>
+        </StackPanel>
+ 
             <DataGrid   
                     x:Name="uxProjectList"
                     ItemsSource="{Binding Projects}"                
@@ -49,8 +75,7 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <Button Content="Edit"
-                                    Command="{Binding DataContext.EditProjectCommand, 
-                                            RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                                    Command="{Binding DataContext.SelectProjectCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
                                     CommandParameter="{Binding}"
                                     Margin="5" />
                             </DataTemplate>
@@ -58,7 +83,8 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <TextBlock x:Name="uxSelectedProject" />
-        </StackPanel>
+
+        
+        
     </Grid>
 </UserControl>

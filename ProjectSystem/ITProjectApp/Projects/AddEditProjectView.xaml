@@ -8,40 +8,36 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="600">
     
-    
-    <b:Interaction.Triggers>
-        <b:EventTrigger EventName="Loaded">
-            <b:CallMethodAction TargetObject="{Binding}" MethodName="Load"/>
-        </b:EventTrigger>
-    </b:Interaction.Triggers>
+  
 
     <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="400*"/>            
+            <ColumnDefinition Width="400*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
 
         <Label Content="Project Name"
-                Grid.Row ="0" 
+                Grid.Row ="1" 
                 Grid.Column="0" 
                 Margin="5"
                 />
         <TextBox Text="{Binding SelectedProject.ProjectName, UpdateSourceTrigger=PropertyChanged}"      
-                 Grid.Row ="0" 
+                 Grid.Row ="1" 
                  Grid.Column="1"
                  />
         
-        <Label Grid.Row ="1" 
+        <Label Grid.Row ="3" 
                Grid.Column="0"
                Content="Project Concept"/>
         <TextBox Text="{Binding SelectedProject.ProjectConcept, UpdateSourceTrigger=PropertyChanged}"  
-                 Grid.Row ="1" 
+                 Grid.Row ="3" 
                  Grid.Column="1"
                  Margin="5"
                  TextWrapping="Wrap"
@@ -50,15 +46,13 @@
             Grid.Column="1"
             Grid.Row="2"
             >
-            <ComboBox 
-                ItemsSource="{Binding Statuses}"
-                SelectedItem="{Binding SelectedProject.Status, UpdateSourceTrigger=PropertyChanged}"                       
+            <ComboBox ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedProject.Status, UpdateSourceTrigger=PropertyChanged}"                       
                 IsSynchronizedWithCurrentItem="True"
                 Height="30" 
                 Width="150">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding StatusName, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBlock Text="{Binding StatusName}"/>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
                 
@@ -96,18 +90,35 @@
         <TextBlock DataContext="{Binding SelectedProject.Status}" Text="{Binding StatusName}"/>
         </StackPanel>
 
-        <StackPanel            
-            Grid.Column="0"
-            Grid.Row="3"
+        <DockPanel      
+            Grid.Column="1"
+            Grid.Row="4"
+            HorizontalAlignment="Center"
             >
 
-            <TextBlock Text="Test"/>
-            <Button Content="Test" Click="Button_Click"/>
             
+            <Button Content="Reload Projects"
+                    MinWidth="100" MaxWidth="200"                    
+                    MinHeight="20" MaxHeight="30"
+                    Margin="5" 
+                    Command="{Binding LoadProjectsCommand}"/>
+
+            <Button Content="Delete Project"
+                    MinWidth="100" MaxWidth="200"                    
+                    MinHeight="20" MaxHeight="30"
+                    Margin="5" 
+                    Command="{Binding DeleteProjectCommand}"
+                    CommandParameter="{Binding SelectedProject}"
+                    />
+
+
             <Button Content="Save"
-                            Command="{Binding SaveProjectCommand}"
-                            CommandParameter="{Binding SelectedProject}"
-                            Margin="5"/>
-        </StackPanel>
+                    MinWidth="100" MaxWidth="200"                    
+                    MinHeight="20" MaxHeight="30"
+                    Margin="5"
+                    Command="{Binding SaveProjectCommand}"
+                    CommandParameter="{Binding SelectedProject}"
+                    />
+        </DockPanel>
     </Grid>
 </UserControl>

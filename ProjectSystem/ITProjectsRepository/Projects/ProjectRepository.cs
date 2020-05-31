@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 
 namespace ITPM.Repository.Projects
 {
-  
+    using static ProjectRepositoryExtension;
 
     public class ProjectRepository : IDataRepository<Project>
     {    
@@ -15,6 +15,9 @@ namespace ITPM.Repository.Projects
         public Project Add(Project newObject)
         {
             var databaseObject = newObject.ToDbModel();
+            
+            //temp
+            databaseObject.StageKey = 6;
 
             DatabaseManager.Instance.Project.Add(databaseObject);
             DatabaseManager.Instance.SaveChanges();
@@ -22,11 +25,11 @@ namespace ITPM.Repository.Projects
             return databaseObject.ToRepositoryModel();
         }
 
-        public bool Remove(Project inputObject)
+        public bool Remove(int projectIdToDelete)
         {
             
             var table = DatabaseManager.Instance.Project;
-            var row = table.Where(t => t.ProjectKey == inputObject.ToDbModel().ProjectKey);
+            var row = table.Where(t => t.ProjectKey == projectIdToDelete);
 
             if (row.Any())
             {
@@ -64,4 +67,18 @@ namespace ITPM.Repository.Projects
         }
                        
     }
+
+
+
+    public static class ProjectRepositoryExtension
+    {
+        public static void IfStageNullSetDefault(this Project project)
+        {
+            if(project.StageKey == 0)
+            {                
+                project.StageKey = 6;
+            }
+        }
+    }
+
 }

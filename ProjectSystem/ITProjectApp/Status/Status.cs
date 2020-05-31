@@ -3,16 +3,36 @@ using System.Collections.Generic;
 
 namespace ITPM.App.Statuses
 {
+    using System.Linq;
+
     public class Status
     {
  
         public int      StatusKey { get; set; }
         public string   StatusName { get; set; }
         public string   StatusDescription { get; set; }
-        public int      Sequence { get; set; }        
+        public int      Sequence { get; set; }
+
+
+
+        public Status()
+        {
+            
+        }
+
+        public Status Clone()
+        {
+            return (Status)MemberwiseClone();
+        }
+
     }
 
-    public class Project : BindableBase
+
+
+
+
+    /*
+    public class Status : BindableBase
     {
         private int _statusKey;
         public int StatusKey
@@ -44,7 +64,7 @@ namespace ITPM.App.Statuses
         }
     }
 
-
+    */
 
 
 
