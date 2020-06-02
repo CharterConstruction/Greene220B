@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITPM.App", "ITProjectApp\IT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITPM.Repository", "ITProjectsRepository\ITPM.Repository.csproj", "{B4D710D8-2432-47F8-AC03-93CF81DE0844}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Helper\Common.csproj", "{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{B4D710D8-2432-47F8-AC03-93CF81DE0844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4D710D8-2432-47F8-AC03-93CF81DE0844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4D710D8-2432-47F8-AC03-93CF81DE0844}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FC3D6BC-E3CD-4B8B-B6DA-F8698FEFB808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

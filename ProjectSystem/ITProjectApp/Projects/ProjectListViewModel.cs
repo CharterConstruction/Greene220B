@@ -17,7 +17,7 @@ namespace ITPM.App.Projects
         
         public ProjectListViewModel()
         {            
-            _projectsView.Filter = Filter;
+            //_projectsView.Filter = Filter;
         }
 
 
@@ -41,6 +41,12 @@ namespace ITPM.App.Projects
             return SearchString == null
                 || employee.ProjectName.Contains(_searchString);
         }
+
+
+
+
+
+
                
 
     }

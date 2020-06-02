@@ -59,3 +59,7 @@ C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\obj\Debug\
 C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\obj\Debug\netcoreapp3.1\Projects\AddEditProjectView.baml
 C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectApp\obj\Debug\netcoreapp3.1\App.baml

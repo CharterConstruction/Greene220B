@@ -45,6 +45,8 @@ namespace ITPM.App.Projects
         }
         */
 
+        // maybe just do a reference lookup to a list of statuses...?
+
 
         private Status _status;
         public Status Status
@@ -71,7 +73,9 @@ namespace ITPM.App.Projects
         // Create AutoMapper configuration for mapping database model objects to repository model objects
         public static AutoMapper.MapperConfiguration mapperConfig = new AutoMapper.MapperConfiguration(cfg => cfg.CreateMap<ITPM.Repository.Projects.Project, ITPM.App.Projects.Project>().ReverseMap());
         public static AutoMapper.IMapper mapper = mapperConfig.CreateMapper();
-        private static ITPM.Repository.Statuses.StatusRepository _statusRepository = new ITPM.Repository.Statuses.StatusRepository();
+        
+        private static List<ITPM.Repository.Statuses.Status> _statusList = new ITPM.Repository.Statuses.StatusRepository().GetAll().ToList();
+
 
         /// <summary>
         /// Converts TimecardRepository.Models.Project object to Database object ITPM.Repository.Projects.Project for CRUD operations.
@@ -94,8 +98,13 @@ namespace ITPM.App.Projects
         /// <returns></returns>
         public static ITPM.App.Projects.Project ToUIModel(this ITPM.Repository.Projects.Project repositoryObject)
         {
-            Project output = mapper.Map<Project>(repositoryObject);
-            output.Status = _statusRepository.GetAll().Where(t => t.StatusKey == repositoryObject.StatusKey).Select(t => t.ToUIModel()).FirstOrDefault();
+            Project output = mapper.Map<ITPM.App.Projects.Project>(repositoryObject);
+
+            Status projectStatus = new Status();
+            projectStatus = _statusList.Where(t => t.StatusKey == repositoryObject.StatusKey).Select(t => t.ToUIModel()).FirstOrDefault().Clone();
+
+            output.Status = projectStatus;
+                
             
             return output;
 

@@ -7,9 +7,11 @@ using System.Windows;
 
 namespace ITPM.App
 {
+    using MahApps.Metro.Controls;
     using System.Linq;
     using ITPM.App.Projects;
     using ITPM.App.Statuses;
+    using System.Windows.Data;
 
     class MainWindowViewModel : BindableBase
     {
@@ -39,16 +41,10 @@ namespace ITPM.App
             // ProjectListViewModel ACTION subscriptions - when these events occur, do things here.
             _projectListViewModel.AddProjectRequested += SetCurrentProject;
             _projectListViewModel.SelectProjectRequested += SetCurrentProject;
+            _projectListViewModel.DeleteProjectRequested += DeleteProjectAndAddNew;
             _addEditProjectViewModel.SaveProjectRequested += SetCurrentProject;
 
-            
-            
-            //_addEditProjectViewModel.LoadProjectsRequested += OnReloadProjectsRequested;
-
-            //to do... listen for delete and reload...?
-
-
-
+        
 
             CurrentListViewModel = _projectListViewModel;
 
@@ -73,16 +69,29 @@ namespace ITPM.App
 
         private void ReloadProjects()
         {
-            _projectListViewModel.OnLoadProjects();
+            _projectListViewModel = new ProjectListViewModel();
+
+            //_projectListViewModel.OnLoadProjects();
+            //_projectListViewModel._projectsView = CollectionViewSource.GetDefaultView(_projectListViewModel._projects as IList<Project>);
+
         }
 
 
 
         private void SetCurrentProject(Project project)
         {
-            _addEditProjectViewModel.OnSelectProject(project);               
-                
+            _addEditProjectViewModel.OnSelectProject(project);
+            
+            //_addEditProjectViewModel.SelectedProject = project;
+
             CurrentDetailViewModel = _addEditProjectViewModel;
+
+        }
+
+        private void DeleteProjectAndAddNew(Project project)
+        {
+            _projectListViewModel.OnLoadProjects();
+            _projectListViewModel.OnAddProject();
         }
 
 
@@ -104,15 +113,7 @@ namespace ITPM.App
         }
 
 
-        /*
-        public RelayCommand ReloadProjectsCommand { get; private set; }
-        public event Action ReloadProjectsRequested = delegate { };
 
-        private void OnReloadProjectsRequested()
-        {
-            ReloadProjectsRequested();
-            //_projectListViewModel.LoadProjects();
-        }*/
 
     }
 }

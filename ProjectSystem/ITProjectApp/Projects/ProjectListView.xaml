@@ -4,6 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ITPM.App.Projects"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"    
              xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="ITPM.App.Projects.ProjectListView"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
@@ -12,36 +15,28 @@
             <b:CallMethodAction TargetObject="{Binding}" MethodName="OnLoadProjects"/>
         </b:EventTrigger>
     </b:Interaction.Triggers>
-
+    
+    
+    <UserControl.Resources>
+        
+        <!-- Left Top Right Bottom-->
+        <Thickness x:Key="ControlMargin">0 10 0 10</Thickness>
+    </UserControl.Resources>
+    
+    
+    
+    
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-
-        <StackPanel 
-            Grid.Row="0" 
-            Orientation="Vertical"
-            HorizontalAlignment="Center"
-            >
-            <TextBlock Text="Search for a Project"
-                       FontSize="16"
-                       Margin="5" 
-                       />
-            <TextBox 
-                Text="{Binding SearchString, UpdateSourceTrigger=PropertyChanged}"                      
-                MinWidth="200" MaxWidth="250"                    
-                Height="25"
-                Margin="5" 
-                />
-
-        </StackPanel>
-
-
-
-        <StackPanel Grid.Row="1" Orientation="Horizontal">               
-                <Button Content="Add Project"
+        
+        
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Add Project"
                         MinWidth="100" MaxWidth="200"                    
                         MinHeight="20" MaxHeight="30"
                         Margin="5" 
@@ -53,6 +48,21 @@
                         Margin="5" 
                         Command="{Binding LoadProjectsCommand}"/>
         </StackPanel>
+  
+            <TextBox 
+                Text="{Binding SearchString, UpdateSourceTrigger=PropertyChanged}"                      
+                Grid.Row="1"                
+                MaxHeight="50"
+                Margin="{StaticResource ControlMargin}"
+                HorizontalContentAlignment="Stretch"
+                Controls:TextBoxHelper.Watermark="Search for a Project"
+                Controls:TextBoxHelper.ClearTextButton="True"
+                Controls:TextBoxHelper.IsWaitingForData="True"
+                Controls:TextBoxHelper.UseFloatingWatermark="False"
+                Controls:TextBoxHelper.WatermarkAlignment="Left"
+                />
+
+ 
  
             <DataGrid   
                     x:Name="uxProjectList"
@@ -70,21 +80,24 @@
 
 
                 <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding ProjectKey}" Header="Id" Width="20*"/>
                     <DataGridTextColumn Binding="{Binding ProjectName}" Header="Name" Width="100*"/>
                     <DataGridTemplateColumn Width="70*" Header="Select" MinWidth="70">
                         <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button Content="Edit"
+                        <DataTemplate>
+                            <Button Width="Auto"
+                                    Margin="{StaticResource ControlMargin}"
+                                    Content="Select"
                                     Command="{Binding DataContext.SelectProjectCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
                                     CommandParameter="{Binding}"
-                                    Margin="5" />
-                            </DataTemplate>
+                                    Style="{DynamicResource MahApps.Styles.Button.Square}" />
+
+                        </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-
-        
+                
         
     </Grid>
 </UserControl>

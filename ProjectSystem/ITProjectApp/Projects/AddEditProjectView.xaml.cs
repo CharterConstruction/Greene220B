@@ -23,19 +23,13 @@ namespace ITPM.App.Projects
             InitializeComponent();
         }
 
-        private void ComboBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+
+
+        private void uxRefreshStatus_Click(object sender, RoutedEventArgs e)
         {
-            var test = 1;
-        }
+            var viewModel = this.DataContext as AddEditProjectViewModel;
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            AddEditProjectViewModel viewModel = this.DataContext as AddEditProjectViewModel;
-
-            MessageBox.Show(viewModel.SelectedProjectStatus.StatusName);
-
-
-
+            uxProjectStatusComboBox.SelectedItem = viewModel.ProjectStatus;
         }
     }
 }

@@ -5,15 +5,43 @@ namespace ITPM.App.Statuses
 {
     using System.Linq;
 
-    public class Status
+    public class Status : BindableBase
     {
  
+     /*   
         public int      StatusKey { get; set; }
         public string   StatusName { get; set; }
         public string   StatusDescription { get; set; }
         public int      Sequence { get; set; }
+        */
 
+        private int _statusKey;
+        public int StatusKey
+        {
+            get { return _statusKey; }
+            set { SetProperty(ref _statusKey, value); }
+        }
 
+        private string _statusName;
+        public string StatusName
+        {
+            get { return _statusName; }
+            set { SetProperty(ref _statusName, value); }
+        }
+
+        private string _statusDescription;
+        public string StatusDescription
+        {
+            get { return _statusDescription; }
+            set { SetProperty(ref _statusDescription, value); }
+        }
+
+        private int _sequence;
+        public int Sequence
+        {
+            get { return _sequence; }
+            set { SetProperty(ref _sequence, value); }
+        }
 
         public Status()
         {

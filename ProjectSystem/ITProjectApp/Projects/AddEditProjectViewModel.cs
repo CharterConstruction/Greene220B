@@ -14,32 +14,16 @@ namespace ITPM.App.Projects
     public class AddEditProjectViewModel : ProjectViewModelBase
     {
         
-        private List<Status> _statusList = null;
-        private ICollectionView _statusView = null;
-
-        
-        
+   
 
         public AddEditProjectViewModel()
         {
-            _statusList = StatusRepository.GetAll().Select(t => t.ToUIModel()).ToList();
-            _statusView = CollectionViewSource.GetDefaultView(_statusList as IList<Status>);
 
-         
 
 
         }
 
 
-        public ICollectionView Statuses
-        {
-            get { return _statusView; }
-        }
-        
-
-
-        
-       
 
 
 
