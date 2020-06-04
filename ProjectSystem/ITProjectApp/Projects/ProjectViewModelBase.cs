@@ -48,7 +48,7 @@ namespace ITPM.App.Projects
 
         //private Status _selectedProjectStatus = null;
 
-//TEMPORARILY PUBLIC!!               
+        //TEMPORARILY PUBLIC!!               
         public List<Project> _projects = null;
         private ObservableCollection<Status> _statusList = null;
 
@@ -61,21 +61,10 @@ namespace ITPM.App.Projects
         {
             Statuses = new ObservableCollection<Status>(StatusRepository.GetAll().Select(t => t.ToUIModel()).ToList());
 
-
             OnLoadProjects();
             _projectsView = CollectionViewSource.GetDefaultView(_projects as IList<Project>);
 
-
-            //OnLoadProjectsV2();
-
-
-            // Listen for the UI to execute the following commands:
-            //LoadProjectsCommand = new RelayCommand(OnLoadProjects);
-
             LoadProjectsCommand = new RelayCommand(OnLoadProjects);
-            
-
-
             SelectProjectCommand = new RelayCommand<Project>(OnSelectProject);
 
             AddProjectCommand = new RelayCommand(OnAddProject);
@@ -85,11 +74,22 @@ namespace ITPM.App.Projects
                        
         }
 
-
-
         
 
+        public ICollectionView Projects
+        {
+            get
+            {
+                return _projectsView;
+            }
+            set
+            {
+                _projectsView = value;
+                Projects.Refresh();
+                OnPropertyChanged("Projects");
 
+            }
+        }
 
 
 
@@ -104,6 +104,18 @@ namespace ITPM.App.Projects
             get { return _statusRepository; }
         }
 
+        private ObservableCollection<Project> _projectCollection;
+        public ObservableCollection<Project> ProjectCollection
+        {
+            get { return _projectCollection; }
+            set
+            {
+                _projectCollection = value;                
+                OnPropertyChanged("ProjectCollection");
+            }
+        }
+
+
 
         public Project SelectedProject
         {
@@ -114,8 +126,19 @@ namespace ITPM.App.Projects
                 ProjectStatus = Statuses.Where(t => t.StatusKey == value.Status.StatusKey).FirstOrDefault();
                 OnPropertyChanged("SelectedProject");
             }
-        }
+        }        
 
+
+               
+        public ObservableCollection<Status> Statuses
+        {
+            get { return _statusList; }
+            set
+            {
+                _statusList = value;
+                OnPropertyChanged("Statuses");                
+            }
+        }
 
 
         private Status _projectStatus;
@@ -128,51 +151,6 @@ namespace ITPM.App.Projects
                 SelectedProject.Status = value;
                 OnPropertyChanged("ProjectStatus");
             }
-        }
-
-
-
-        public ObservableCollection<Status> Statuses
-        {
-            get { return _statusList; }
-            set
-            {
-                _statusList = value;
-                OnPropertyChanged("Statuses");                
-            }
-        }
-
-
-        public ICollectionView Projects
-        {
-            get 
-            { 
-                return _projectsView; 
-            }
-            set
-            {
-                _projectsView = value;
-                OnPropertyChanged("Projects");
-
-            }
-
-        }
-
-
-        public ObservableCollection<Project> _allProjects;
-        public ObservableCollection<Project> AllProjects
-        {
-            get
-            {
-                return _allProjects;
-            }            
-            set
-            {
-                _allProjects = value;
-                OnPropertyChanged("ProjectList");
-
-            }
-
         }
 
 
@@ -207,22 +185,30 @@ namespace ITPM.App.Projects
 
         }
 
-
-        public void OnLoadProjectsV2()
-        {
-            LoadProjectsRequested();
-            _allProjects = new ObservableCollection<Project>(ProjectRepository.GetAll().Select(t => t.ToUIModel()).ToList());
-            AllProjects = new ObservableCollection<Project>(_allProjects);            
-
-        }
-
         public void OnLoadProjects()
         {            
             LoadProjectsRequested();
+            //LoadProjects();
+            LoadProjectCollection();
+        }
+
+        public void LoadProjects()
+        {
             _projects = new List<Project>();
             _projects = ProjectRepository.GetAll().Select(t => t.ToUIModel()).ToList();
-            
+            _projectsView = CollectionViewSource.GetDefaultView(_projects as IList<Project>);
         }
+
+
+
+        public void LoadProjectCollection()
+        {
+            _projects = new List<Project>();
+            _projects = ProjectRepository.GetAll().Select(t => t.ToUIModel()).ToList();   
+            
+            ProjectCollection = new ObservableCollection<Project>(_projects.Select(t => t.Clone()));
+        }
+
 
         public void OnSaveProject(Project project)
         {
@@ -262,13 +248,10 @@ namespace ITPM.App.Projects
 
         public void OnDeleteProject(Project project)
         {
-            DeleteProjectRequested(project);
-      
             DeleteProjectFromDatabase(project);
+
+            DeleteProjectRequested(project);            
         }
-
-
-
 
 
 
@@ -283,8 +266,7 @@ namespace ITPM.App.Projects
 
             LoadProjectsRequested();
             AddProjectRequested(NewProjectConcept());
-            
-
+            Projects.Refresh();
             return projectDeleted;
 
         }

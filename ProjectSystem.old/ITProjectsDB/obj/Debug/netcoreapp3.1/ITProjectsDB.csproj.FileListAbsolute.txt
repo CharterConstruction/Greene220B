@@ -1,0 +1,10 @@
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\bin\Debug\netcoreapp3.1\ITProjectsDB.deps.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\bin\Debug\netcoreapp3.1\ITProjectsDB.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITProjectsDB.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITProjectsDB.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITProjectsDB.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\bin\Debug\netcoreapp3.1\ITProjectsDB.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\bin\Debug\netcoreapp3.1\ITProjectsDB.runtimeconfig.dev.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\bin\Debug\netcoreapp3.1\ITProjectsDB.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITProjectsDB.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITProjectsDB.pdb

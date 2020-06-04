@@ -1,0 +1,15 @@
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsViewModel.deps.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsViewModel.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsViewModel.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsDB.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsRepository.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsRepository.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsDB.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITProjectsViewModel.csprojAssemblyReference.cache
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITProjectsViewModel.AssemblyInfoInputs.cache
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITProjectsViewModel.AssemblyInfo.cs
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITProjectsViewModel.csproj.CopyComplete
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITProjectsViewModel.dll
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\obj\Debug\netcoreapp3.1\ITProjectsViewModel.pdb
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsViewModel.runtimeconfig.json
+C:\Users\philg\Documents\GitHub\Dev\C#\ProjectSystem\ITProjectsViewModel\bin\Debug\netcoreapp3.1\ITProjectsViewModel.runtimeconfig.dev.json

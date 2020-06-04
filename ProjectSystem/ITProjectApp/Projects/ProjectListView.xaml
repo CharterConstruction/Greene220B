@@ -17,8 +17,7 @@
     </b:Interaction.Triggers>
     
     
-    <UserControl.Resources>
-        
+    <UserControl.Resources>        
         <!-- Left Top Right Bottom-->
         <Thickness x:Key="ControlMargin">0 10 0 10</Thickness>
     </UserControl.Resources>
@@ -66,7 +65,7 @@
  
             <DataGrid   
                     x:Name="uxProjectList"
-                    ItemsSource="{Binding Projects}"                
+                    ItemsSource="{Binding ProjectCollection}"                
                     Grid.Column="0" 
                     Grid.Row="2"
                     Margin="5"

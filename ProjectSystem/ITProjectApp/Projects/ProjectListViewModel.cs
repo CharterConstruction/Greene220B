@@ -21,6 +21,26 @@ namespace ITPM.App.Projects
         }
 
 
+
+
+        private string _searchString = null;
+        public string SearchString
+        {
+            get { return _searchString; }
+            set
+            {
+                _searchString = value;
+                ProjectCollection = new ObservableCollection<Project>(_projects.Where(t => t.ProjectName.Contains(value)).ToList());
+                OnPropertyChanged("SearchString");            
+                
+            }
+        }
+
+
+
+
+
+        /*
         private string _searchString = null;
         public string SearchString
         {
@@ -31,15 +51,15 @@ namespace ITPM.App.Projects
                 OnPropertyChanged("SearchString");
                 Projects.Refresh();
             }
-        }
+        }*/
 
 
         private bool Filter(object item)
         {
-            Project employee = item as Project;
+            Project project = item as Project;
 
             return SearchString == null
-                || employee.ProjectName.Contains(_searchString);
+                || project.ProjectName.Contains(_searchString);
         }
 
 

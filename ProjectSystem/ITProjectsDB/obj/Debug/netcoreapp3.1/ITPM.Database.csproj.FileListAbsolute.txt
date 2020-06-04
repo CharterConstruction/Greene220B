@@ -7,4 +7,3 @@ C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsDB\obj\Debug\
 C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITPM.Database.AssemblyInfo.cs
 C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITPM.Database.dll
 C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITPM.Database.pdb
-C:\Users\philg\Documents\GitHub\Greene220B\ProjectSystem\ITProjectsDB\obj\Debug\netcoreapp3.1\ITPM.Database.csprojAssemblyReference.cache
