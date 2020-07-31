@@ -366,3 +366,5 @@ C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\obj\Debug\netcoreap
 C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csproj.CopyComplete
 C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.dll
 C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.pdb
+C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.genruntimeconfig.cache

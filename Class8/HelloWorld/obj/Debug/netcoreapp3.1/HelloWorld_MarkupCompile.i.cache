@@ -1,5 +1,5 @@
 ﻿HelloWorld
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\philg\Documents\GitHub\Greene220B\Class8\HelloWorld\App.xaml
 17-54079686
 
-2030445111
+211152793147
 210-1278983181
 ControlWindow.xaml;CustomControlWIndow.xaml;Dictionary1.xaml;Dictionary2.xaml;ListBoxWindow.xaml;MainWindow.xaml;MenuWindow.xaml;MouseWindow.xaml;NavigatorWindow.xaml;NumberControl.xaml;PanelWindow.xaml;ResourceWindow.xaml;RGBControl.xaml;RGBWindow.xaml;SecondWindow.xaml;StatusWindow.xaml;TabControlWindow.xaml;
 
-True
+False
 

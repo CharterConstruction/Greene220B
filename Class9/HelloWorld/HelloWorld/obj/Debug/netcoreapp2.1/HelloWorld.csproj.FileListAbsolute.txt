@@ -47,3 +47,5 @@ C:\Users\philg\Documents\GitHub\Greene220B\Class9\HelloWorld\HelloWorld\obj\Debu
 C:\Users\philg\Documents\GitHub\Greene220B\Class9\HelloWorld\HelloWorld\obj\Debug\netcoreapp2.1\Razor\Views\Home\RsvpForm.cshtml.g.cs
 C:\Users\philg\Documents\GitHub\Greene220B\Class9\HelloWorld\HelloWorld\obj\Debug\netcoreapp2.1\Razor\Views\Home\_ViewImports.cshtml.g.cs
 C:\Users\philg\Documents\GitHub\Greene220B\Class9\HelloWorld\HelloWorld\obj\Debug\netcoreapp2.1\Razor\Views\Home\Thanks.cshtml.g.cs
+C:\Users\philg\Documents\GitHub\Greene220B\Class9\HelloWorld\HelloWorld\obj\Debug\netcoreapp2.1\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\philg\Documents\GitHub\Greene220B\Class9\HelloWorld\HelloWorld\obj\Debug\netcoreapp2.1\HelloWorld.genruntimeconfig.cache

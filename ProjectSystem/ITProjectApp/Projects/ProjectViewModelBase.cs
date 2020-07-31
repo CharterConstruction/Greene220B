@@ -87,7 +87,6 @@ namespace ITPM.App.Projects
                 _projectsView = value;
                 Projects.Refresh();
                 OnPropertyChanged("Projects");
-
             }
         }
 
