@@ -22,7 +22,7 @@
     "jquery": "^3.3.1",
     "mohithg-switchery": "^0.8.4",
     "popper.js": "^1.14.4",
-    "select2": "^4.0.6-rc.1"
+    "select2": "^4.0.6"
   },
   "devDependencies": {
     "@awea/gulp-pretty-html": "^1.0.1",
